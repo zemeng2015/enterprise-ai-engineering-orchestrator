@@ -1,6 +1,6 @@
 # Deployment Prep
 
-This project is ready for GitHub Pages after it is pushed to a public GitHub repository.
+This project is deployed on GitHub Pages from the public GitHub repository.
 
 ## Recommended Repository
 
@@ -38,12 +38,16 @@ Expected demo URL format:
 https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
 ```
 
-## External Actions Still Requiring Confirmation
+Current public URLs:
 
-These actions create or change external public state and should be done only after explicit confirmation:
+```text
+Repository: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
+Demo: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
+```
 
-- Create public GitHub repository.
-- Push local git commits to GitHub.
-- Enable GitHub Pages.
-- Add deployed URL to Devpost submissions.
-- Create Devpost project drafts.
+## External Actions Still Open
+
+- Novus.ai setup for Mind the Product requires GitHub authorization to let Novus/Pendo read this repository and create an installation pull request.
+- Demo video still needs to be recorded and uploaded to YouTube, Vimeo, or Loom as public/unlisted.
+- GitLab Devpost project creation is currently blocked by an interactive reCAPTCHA challenge.
+- UiPath Labs access form needs the email address and city that should be submitted for the sandbox request.

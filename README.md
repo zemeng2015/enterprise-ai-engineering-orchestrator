@@ -29,6 +29,11 @@ The same demo can be described differently per submission:
 - [Devpost draft copy](./DEVPOST_DRAFTS.md)
 - [Deployment prep](./DEPLOYMENT.md)
 
+## Public Demo
+
+- Demo: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
+- Repository: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
+
 ## Local Setup
 
 ```bash
@@ -59,6 +64,7 @@ npm audit --audit-level=high
 - This version is a safe local demo. It does not call live GitLab, UiPath, Devpost, or customer systems.
 - No credentials, tokens, cookies, or browser storage are collected.
 - External integrations are represented as demo states and can be wired later behind explicit safety gates.
+- Mind the Product final submission requires Novus.ai live instrumentation plus a hosted 2-3 minute demo video.
 
 ## License
 

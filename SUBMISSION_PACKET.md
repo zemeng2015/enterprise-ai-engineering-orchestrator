@@ -80,6 +80,11 @@ Demo emphasis:
 - Lucide React
 - Local simulated state
 
+## Public Links
+
+- Demo: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
+- Repository: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
+
 ## Safety Notes
 
 - No live GitLab, UiPath, Devpost, or customer API calls.
@@ -118,3 +123,10 @@ The main challenge is designing an agent workflow that feels enterprise-trustwor
 - Connect UiPath Test Cloud execution and Automation Cloud approval routing.
 - Generate real test patches and evidence bundles.
 - Add product analytics instrumentation for usage validation.
+
+## Current Submission Blockers
+
+- Mind the Product final submission should wait for Novus.ai installation on the live deployed project and a Novus dashboard screenshot.
+- Mind the Product also requires a 2-3 minute demo video hosted on YouTube, Vimeo, or Loom.
+- GitLab Transcend project draft creation is blocked by a visible reCAPTCHA challenge on Devpost.
+- UiPath Labs access request needs the email address and city to submit for Zack's sandbox access.

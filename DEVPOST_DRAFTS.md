@@ -5,8 +5,8 @@ Use these as copy/paste starting points after the public GitHub repo and demo UR
 Shared links to fill in later:
 
 ```text
-GitHub repo: TBD
-Demo URL: TBD
+GitHub repo: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
+Demo URL: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
 Demo video: TBD
 ```
 
@@ -116,6 +116,10 @@ React, TypeScript, Vite, Lucide React, local simulated workflow state.
 ### Safety note
 
 This version is a safe local product demo. It does not collect credentials, scrape browser sessions, or mutate external systems.
+
+### Current submission blocker
+
+Mind the Product requires Novus.ai to be installed and firing on the live deployed project, plus a screenshot of the Novus dashboard. Novus setup requires authorizing the Novus/Pendo GitHub app to read the repository and create an installation pull request.
 
 ## Shared Answers
 
