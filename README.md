@@ -4,6 +4,8 @@ Reusable hackathon MVP for June 2026 remote prize submissions.
 
 This is a local React/Vite demo of an engineering workflow orchestration product. It helps teams assess release risk, map repository context, generate targeted tests, collect evidence, and route human approval.
 
+![Enterprise AI Engineering Orchestrator desktop dashboard](./docs/screenshots/orchestrator-desktop.png)
+
 ## Hackathon Positioning
 
 The same demo can be described differently per submission:
@@ -24,6 +26,8 @@ The same demo can be described differently per submission:
 
 - [Submission packet draft](./SUBMISSION_PACKET.md)
 - [5-minute demo script](./DEMO_SCRIPT.md)
+- [Devpost draft copy](./DEVPOST_DRAFTS.md)
+- [Deployment prep](./DEPLOYMENT.md)
 
 ## Local Setup
 
