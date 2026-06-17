@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import type { CSSProperties } from "react";
 import {
   Activity,
   AlertTriangle,
@@ -126,7 +127,7 @@ function App() {
             </div>
 
             <div className="risk-body">
-              <div className="risk-meter" style={{ "--risk": `${progress}%` } as React.CSSProperties}>
+              <div className="risk-meter" style={{ "--risk": `${progress}%` } as CSSProperties}>
                 <span>{progress}</span>
                 <small>risk score</small>
               </div>
