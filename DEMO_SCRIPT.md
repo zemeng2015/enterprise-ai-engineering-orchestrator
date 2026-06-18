@@ -1,5 +1,13 @@
 # 5-Minute Demo Script
 
+Use this for the UiPath AgentHack demo video. Keep the recording under 5 minutes and show the running app, not only slides.
+
+Recommended demo URL:
+
+```text
+https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
+```
+
 ## 0:00 - 0:30 Problem
 
 Engineering teams are using coding agents to move faster, but release governance has not caught up. A generated patch still needs risk assessment, impacted tests, evidence, and human approval.
@@ -45,9 +53,10 @@ The key enterprise pattern is not autonomous release mutation. It is governed au
 
 Switch the positioning dropdown:
 
-- UiPath AgentHack: show UiPath Automation as the orchestration layer.
-- GitLab Transcend: show GitLab Context as the repository signal source.
-- Mind the Product: position as a shippable product workflow with measurable feedback.
+- Keep `UiPath AgentHack` selected for the final submission recording.
+- Point out `UiPath Automation` in the Repo Context panel as the planned orchestration layer.
+- Point out `UiPath Automation` in the Agent Workflow timeline as the human approval route.
+- Mention that `GitLab Transcend` and `Mind the Product` modes are present only to show the reusable product surface, but the Devpost submission is for UiPath Test Cloud.
 
 ## 4:20 - 5:00 Closing
 
@@ -56,3 +65,22 @@ Close with:
 This MVP demonstrates the release-governance layer that enterprise AI engineering teams need: context, risk, generated tests, evidence, and human approval in one workflow.
 
 Next steps are live GitLab context, UiPath Test Cloud execution, Automation Cloud approval routing, and real generated test patches.
+
+## Exact Click Path
+
+1. Open the live demo URL.
+2. Confirm `Positioning` is set to `UiPath AgentHack`.
+3. Click `Run Risk Scan`.
+4. Scroll or point to `Impacted Tests`.
+5. Click `Generate Tests`.
+6. Point to `Evidence`.
+7. Click `Approve Release`.
+8. Close by showing the public GitHub repo and README.
+
+## Recording Checklist
+
+- Browser zoom: 100%.
+- Window size: desktop/laptop width, not mobile.
+- Keep the Devpost page closed during recording unless showing final project links.
+- Do not show private email, tokens, browser profile settings, or UiPath credentials.
+- If Labs access has not arrived yet, say clearly: "The public MVP uses a safe simulated adapter; the UiPath Labs environment will replace this adapter for the final connected run."

@@ -24,6 +24,7 @@ Remaining work:
 
 - Add UiPath Labs URL to Devpost when received.
 - Record and upload the demo video.
+- Follow `docs/FINAL_SUBMISSION_RUNBOOK.md` for final field checks.
 - Complete Devpost finalization.
 - Optionally update README/screenshots after real UiPath Labs access is connected.
 
@@ -35,3 +36,10 @@ Remaining work:
 ## Decision
 
 Use `enterprise-ai-engineering-orchestrator` as the primary Devpost submission repository. The earlier `uipath-agenthack-qa-orchestrator` repo is a narrower first MVP and should not be the main Devpost artifact unless the submission direction changes.
+
+## Submission Prep Artifacts
+
+- Final runbook: `docs/FINAL_SUBMISSION_RUNBOOK.md`
+- Demo script: `DEMO_SCRIPT.md`
+- Teleprompter script: `docs/DEMO_TELEPROMPTER.md`
+- Devpost copy: `DEVPOST_DRAFTS.md`
