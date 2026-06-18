@@ -31,7 +31,7 @@ The current repository now includes a verified Casper Testnet transfer proof for
 1. Generate or import a Casper Testnet account. Done: Casper Snap public key `0202567874ab8773690476e4d2cec5ec09cffb279a10fa41c078a193f19a51bbf22e`.
 2. Fund it through the Casper Testnet faucet. Done: faucet transaction `6b2bad1bfd8fb5bd57d344310a0876c05ff454513df793b43f5b87e6e3f8af84`.
 3. Capture the deploy or transaction hash from Casper Testnet. Done: explorer URL above.
-4. Update `src/data/demoData.ts`, this readiness file, and the DoraHacks submission with the explorer URL. Source and docs are updated; DoraHacks form is still blocked by logo upload permission until the BUIDL form can continue.
+4. Update `src/data/demoData.ts`, this readiness file, and the DoraHacks submission with the explorer URL. Source and docs are updated; DoraHacks Profile, Details, and Team steps are filled. The remaining DoraHacks blocker is the final Contact step, which requires a real Telegram username plus one backup contact.
 5. Optional stronger proof: add a custom Casper Testnet contract/deploy action that carries or directly references the audit payload hash before final judging.
 
 ## References Checked

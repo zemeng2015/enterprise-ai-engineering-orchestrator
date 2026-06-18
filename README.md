@@ -119,7 +119,7 @@ The script writes:
 - `outputs/casper-audit-payload.json`
 - `outputs/casper-audit-proof.json`
 
-Current boundary: the payload hash is ready, but a real Casper Testnet deploy or transfer hash is still required before final DoraHacks submission. See [Casper readiness](./docs/casper-agentic-buildathon-readiness.md).
+Current boundary: the payload hash is generated and paired with a verified Casper Testnet transfer proof. This is a truthful transfer/audit receipt workflow, not a custom smart-contract deployment. See [Casper readiness](./docs/casper-agentic-buildathon-readiness.md).
 
 ## Public Demo
 
@@ -156,7 +156,7 @@ npm audit --audit-level=high
 - This version is a safe local demo. It does not call live GitLab, UiPath, Devpost, or customer systems.
 - No credentials, tokens, cookies, or browser storage are collected.
 - External integrations are represented as demo states and can be wired later behind explicit safety gates.
-- Mind the Product final submission requires Novus.ai live instrumentation plus a hosted 2-3 minute demo video.
+- Mind the Product has been submitted with a hosted demo video and Novus/Pendo installed on the live GitHub Pages demo. Public Novus proof: https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/novus-dashboard-live-after-install.png
 
 ## License
 

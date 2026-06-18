@@ -18,7 +18,7 @@ Status as of 2026-06-19 CST.
 | Public open source repository | GitHub repository is public and includes source, README, setup instructions, CI, and MIT license. | Done |
 | Working project URL | GitHub Pages demo is live. | Done |
 | Text description/story | Public Devpost story explains developer pain point, workflow, implementation, challenges, accomplishments, and next steps. | Done |
-| Demo video under 3 minutes | YouTube unlisted demo is 2:31 and has no copyright issue. | Needs Devpost field save/verification for GitLab |
+| Demo video under 3 minutes | YouTube demo is 2:30, has no copyright issue, and the GitLab Devpost public page verifies YouTube ID `8AKMY8VoN7c`. | Done |
 | GitLab Duo Agent Platform artifact | Project-level skill exists at `skills/release-risk-orbit/SKILL.md`. | Added |
 | Meaningful GitLab Orbit usage | The skill defines the intended Orbit query workflow and fallback safety rules, but the current web demo still uses simulated GitLab context rather than live Orbit API/CLI output. | Weak / needs live Orbit proof if available |
 
@@ -30,7 +30,6 @@ The largest GitLab-specific judging risk is not basic submission completeness; i
 
 Before the June 24, 2026 2:00pm EDT deadline:
 
-1. Save the YouTube demo URL into the GitLab Devpost video field.
-2. Update the Devpost story to mention the `skills/release-risk-orbit/SKILL.md` artifact.
-3. If GitLab Orbit access is available, run one real Orbit query against an indexed project or group and add the output/evidence to the README or Devpost story.
-4. If Orbit access is not available, keep the submission honest and label it as an installable skill plus simulated dashboard prototype.
+1. If GitLab Orbit access is available, run one real Orbit query against an indexed project or group and add the output/evidence to the README or Devpost story.
+2. If Orbit access is not available, keep the submission honest and label it as an installable skill plus simulated dashboard prototype.
+3. Keep the YouTube demo accessible to judges through the Devpost video field during the judging period.

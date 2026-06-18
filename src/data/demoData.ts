@@ -27,7 +27,7 @@ export const positioning = {
   gitlab: {
     name: "GitLab Transcend",
     angle: "Repository-aware developer workflow agent for release confidence",
-    integration: "GitLab Context",
+    integration: "GitLab Orbit Evidence",
     primaryCta: "Generate Tests",
   },
   product: {
@@ -86,9 +86,9 @@ export const tests: TestCase[] = [
 export const workflow: WorkflowStep[] = [
   {
     label: "Read repo context",
-    agent: "GitLab Context",
+    agent: "GitLab Orbit Skill",
     status: "complete",
-    evidence: "12 changed files, 4 owned services, 2 critical routes",
+    evidence: "Orbit-style signals: 12 changed files, 4 owned services, 2 critical routes",
   },
   {
     label: "Map release risk",
