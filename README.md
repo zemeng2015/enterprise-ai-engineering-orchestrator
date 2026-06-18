@@ -13,6 +13,7 @@ The same demo can be described differently per submission:
 - **UiPath AgentHack:** Agentic QA orchestration for regulated enterprise releases, with UiPath Automation / Test Cloud as the governance and human-approval layer.
 - **GitLab Transcend:** Repository-aware developer workflow automation using GitLab Orbit-style context, CI signals, generated tests, and a project-level GitLab Duo Agent Skill.
 - **Mind the Product:** A shippable AI workflow product that lets product-minded builders validate a concrete operational pain point quickly.
+- **Casper Agentic Buildathon:** Verifiable agentic release-audit receipt prepared for Casper Testnet anchoring.
 
 ## What Works
 
@@ -29,6 +30,7 @@ The same demo can be described differently per submission:
 - [Devpost draft copy](./DEVPOST_DRAFTS.md)
 - [Deployment prep](./DEPLOYMENT.md)
 - [GitLab Transcend readiness](./docs/gitlab-transcend-readiness.md)
+- [Casper Agentic Buildathon readiness](./docs/casper-agentic-buildathon-readiness.md)
 - [UiPath AgentHack presentation deck](./docs/uipath-agenthack-presentation.pptx)
 - [Devpost thumbnail asset](./docs/screenshots/devpost-thumbnail.png)
 
@@ -101,6 +103,23 @@ http://127.0.0.1:5178/
 4. Use the UiPath positioning mode in the left rail, run the release-risk workflow, inspect generated test recommendations, and approve or review the release checkpoint.
 
 5. For production UiPath integration, replace the simulated execution adapter with UiPath Test Cloud calls after a UiPath Labs environment URL is available.
+
+## Casper Agentic Buildathon Readiness
+
+This repository now includes a Casper-specific extension path for a verifiable release-audit receipt.
+
+Generate the local audit payload and hash:
+
+```bash
+npm run casper:proof
+```
+
+The script writes:
+
+- `outputs/casper-audit-payload.json`
+- `outputs/casper-audit-proof.json`
+
+Current boundary: the payload hash is ready, but a real Casper Testnet deploy or transfer hash is still required before final DoraHacks submission. See [Casper readiness](./docs/casper-agentic-buildathon-readiness.md).
 
 ## Public Demo
 

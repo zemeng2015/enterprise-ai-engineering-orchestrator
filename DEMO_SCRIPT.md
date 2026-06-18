@@ -57,6 +57,7 @@ Switch the positioning dropdown:
 - Point out `UiPath Automation` in the Repo Context panel as the planned orchestration layer.
 - Point out `UiPath Automation` in the Agent Workflow timeline as the human approval route.
 - Mention that `GitLab Transcend` and `Mind the Product` modes are present only to show the reusable product surface, but the Devpost submission is for UiPath Test Cloud.
+- For Casper-specific judging, switch to `Casper Buildathon` and show the receipt panel only after explaining that a real Testnet transaction hash is still required before final DoraHacks submission.
 
 ## 4:20 - 5:00 Closing
 

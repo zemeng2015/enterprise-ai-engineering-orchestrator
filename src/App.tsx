@@ -9,12 +9,13 @@ import {
   ClipboardCheck,
   FileCode2,
   GitBranch,
+  Link2,
   Play,
   ShieldCheck,
   Sparkles,
   TestTube2,
 } from "lucide-react";
-import { evidenceLog, HackathonMode, positioning, tests, workflow } from "./data/demoData";
+import { casperAuditProof, evidenceLog, HackathonMode, positioning, tests, workflow } from "./data/demoData";
 
 const nav = [
   { label: "Release Risk", icon: Activity },
@@ -24,7 +25,7 @@ const nav = [
   { label: "Evidence", icon: ClipboardCheck },
 ];
 
-const modes: HackathonMode[] = ["uipath", "gitlab", "product"];
+const modes: HackathonMode[] = ["uipath", "gitlab", "product", "casper"];
 
 function App() {
   const [mode, setMode] = useState<HackathonMode>("uipath");
@@ -50,12 +51,20 @@ function App() {
       };
     }
 
+    if (mode === "casper") {
+      return {
+        title: "Audit receipt ready",
+        body: "Release decision hash is prepared for Casper Testnet anchoring before final judging submission.",
+        action: "Approve Receipt",
+      };
+    }
+
     return {
       title: "Needs Review",
       body: "Auth and release-gate changes require a human checkpoint before promotion.",
       action: "Approve Release",
     };
-  }, [scanState]);
+  }, [mode, scanState]);
 
   const runScan = () => {
     setScanState("running");
@@ -268,6 +277,40 @@ function App() {
               ))}
             </ol>
           </section>
+
+          {mode === "casper" ? (
+            <section className="panel casper-panel">
+              <div className="panel-header compact">
+                <div>
+                  <span className="tiny-label">Casper Receipt</span>
+                  <h2>Verifiable release audit</h2>
+                </div>
+                <Link2 size={18} />
+              </div>
+              <dl className="receipt-list">
+                <div>
+                  <dt>Audit ID</dt>
+                  <dd>{casperAuditProof.auditId}</dd>
+                </div>
+                <div>
+                  <dt>Decision</dt>
+                  <dd>{casperAuditProof.decision}</dd>
+                </div>
+                <div>
+                  <dt>Payload hash</dt>
+                  <dd>{casperAuditProof.payloadHash}</dd>
+                </div>
+                <div>
+                  <dt>Chain</dt>
+                  <dd>{casperAuditProof.chain}</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>{casperAuditProof.transactionStatus}</dd>
+                </div>
+              </dl>
+            </section>
+          ) : null}
         </div>
       </section>
     </main>

@@ -1,0 +1,29 @@
+{
+  "auditId": "EAIO-2026-06-17-AUTH-142",
+  "project": "Enterprise AI Engineering Orchestrator",
+  "release": "checkout release 2026.06.17",
+  "decision": "hold-for-human-review",
+  "chain": "casper-test",
+  "generatedAt": "2026-06-17T18:00:00.000Z",
+  "riskScore": 71,
+  "changedFiles": 12,
+  "highRiskAreas": [
+    "OAuth callback guard",
+    "Release gate API"
+  ],
+  "recommendedActions": [
+    "Generate regression tests for invalid nonce and stale state",
+    "Generate contract tests and API fixture diff",
+    "Require human approval before promotion"
+  ],
+  "evidence": [
+    "Parsed merge request !4827 and mapped touched modules.",
+    "Detected auth callback contract change with no matching test update.",
+    "Generated JUnit skeleton for OAuth nonce replay scenario.",
+    "Prepared human-in-the-loop approval task."
+  ],
+  "payloadHash": "be704f66fb2e9aa63f41e86e765c20f0120027651d4bca63b27ce85d2bc9ee01",
+  "transactionStatus": "pending-testnet-funding",
+  "explorerUrl": null,
+  "nextAction": "Fund a Casper Testnet account, submit this payload hash through a transaction-producing component, then replace transactionStatus and explorerUrl with the real deploy or transfer proof."
+}

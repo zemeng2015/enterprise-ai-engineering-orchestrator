@@ -1,4 +1,4 @@
-export type HackathonMode = "uipath" | "gitlab" | "product";
+export type HackathonMode = "uipath" | "gitlab" | "product" | "casper";
 
 export type TestCase = {
   id: string;
@@ -35,6 +35,12 @@ export const positioning = {
     angle: "Shippable AI product workflow with measurable operator feedback",
     integration: "Product Analytics",
     primaryCta: "Approve Release",
+  },
+  casper: {
+    name: "Casper Buildathon",
+    angle: "Verifiable agentic release-audit receipt anchored to Casper Testnet",
+    integration: "Casper Testnet",
+    primaryCta: "Generate Audit Receipt",
   },
 } satisfies Record<HackathonMode, { name: string; angle: string; integration: string; primaryCta: string }>;
 
@@ -110,3 +116,13 @@ export const evidenceLog = [
   "Generated JUnit skeleton for OAuth nonce replay scenario.",
   "Prepared UiPath human-in-the-loop approval task.",
 ];
+
+export const casperAuditProof = {
+  auditId: "EAIO-2026-06-17-AUTH-142",
+  decision: "hold-for-human-review",
+  payloadHash: "be704f66fb2e9aa63f41e86e765c20f0120027651d4bca63b27ce85d2bc9ee01",
+  chain: "casper-test",
+  transactionStatus: "pending-testnet-funding",
+  explorerUrl: "Pending real Casper Testnet deploy or transfer hash",
+  generatedBy: "scripts/casper-audit-proof.mjs",
+};

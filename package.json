@@ -10,7 +10,8 @@
     "preview": "vite preview --host 127.0.0.1",
     "preflight": "node scripts/preflight.mjs",
     "submission-audit": "node scripts/submission-audit.mjs",
-    "final-readiness": "node scripts/final-readiness.mjs"
+    "final-readiness": "node scripts/final-readiness.mjs",
+    "casper:proof": "node scripts/casper-audit-proof.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.561.0",

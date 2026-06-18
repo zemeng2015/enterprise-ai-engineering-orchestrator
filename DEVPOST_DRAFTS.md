@@ -159,9 +159,43 @@ React, TypeScript, Vite, Lucide React, local simulated workflow state.
 
 This version is a safe local product demo. It does not collect credentials, scrape browser sessions, or mutate external systems.
 
-### Current submission blocker
+### Current submission status
 
-Mind the Product requires Novus.ai to be installed and firing on the live deployed project, plus a screenshot of the Novus dashboard. Novus setup requires authorizing the Novus/Pendo GitHub app to read the repository and create an installation pull request.
+Mind the Product has been submitted. Novus/Pendo is installed on the live deployed project, and a public dashboard proof screenshot is committed at `docs/novus-dashboard-live-after-install.png`.
+
+## Casper Agentic Buildathon 2026
+
+### Project title
+
+Enterprise AI Orchestrator: Verifiable Agentic Release Audit on Casper
+
+### Tagline
+
+Agentic release governance with Casper Testnet audit receipts.
+
+### What it does
+
+The Casper extension turns an AI-assisted release decision into a verifiable audit receipt. The dashboard prepares the release-risk decision, canonicalizes the evidence payload, computes a SHA-256 hash, and displays the Casper Testnet receipt fields judges need to verify the decision trail.
+
+### Casper angle
+
+The project fits Casper by anchoring high-value enterprise agent decisions to a public testnet proof. Instead of treating an AI workflow as a black box, the release audit payload can be hashed and correlated to a Casper Testnet transaction-producing component.
+
+### Built with
+
+React, TypeScript, Vite, Node.js crypto, Casper Testnet proof workflow.
+
+### Demo flow
+
+1. Switch positioning to `Casper Buildathon`.
+2. Show the release-risk context and human approval state.
+3. Show the Casper receipt panel.
+4. Run `npm run casper:proof` and show `outputs/casper-audit-proof.json`.
+5. Open the Casper Testnet explorer URL after the real transaction/deploy hash is available.
+
+### Safety note
+
+The current repo prepares the audit payload and proof hash. Do not final-submit this Casper entry until the proof is backed by a real Casper Testnet transaction or deployed on-chain component.
 
 ## Shared Answers
 
