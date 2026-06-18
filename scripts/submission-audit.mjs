@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, statSync } from "node:fs";
 
 const links = [
   {
@@ -59,6 +59,16 @@ const knownBlockerTerms = [
   "Official Rules and Devpost Terms still need final review",
 ];
 
+const imageRequirements = [
+  {
+    path: "docs/screenshots/devpost-thumbnail.png",
+    width: 1200,
+    height: 800,
+    maxBytes: 5 * 1024 * 1024,
+    label: "Devpost thumbnail",
+  },
+];
+
 function fail(message) {
   console.error(`Submission audit failed: ${message}`);
   process.exit(1);
@@ -68,9 +78,36 @@ function readText(path) {
   return readFileSync(path, "utf8");
 }
 
+function readPngDimensions(path) {
+  const buffer = readFileSync(path);
+  const signature = buffer.subarray(0, 8).toString("hex");
+  if (signature !== "89504e470d0a1a0a") {
+    fail(`${path} is not a PNG file`);
+  }
+
+  return {
+    width: buffer.readUInt32BE(16),
+    height: buffer.readUInt32BE(20),
+  };
+}
+
 for (const file of requiredFiles) {
   if (!existsSync(file)) {
     fail(`missing required file: ${file}`);
+  }
+}
+
+for (const requirement of imageRequirements) {
+  const stats = statSync(requirement.path);
+  if (stats.size > requirement.maxBytes) {
+    fail(`${requirement.label} is too large: ${stats.size} bytes`);
+  }
+
+  const dimensions = readPngDimensions(requirement.path);
+  if (dimensions.width !== requirement.width || dimensions.height !== requirement.height) {
+    fail(
+      `${requirement.label} must be ${requirement.width}x${requirement.height}; found ${dimensions.width}x${dimensions.height}`,
+    );
   }
 }
 
@@ -102,4 +139,4 @@ for (const { label, url, requiredText, binary } of links) {
   }
 }
 
-console.log("Submission audit passed: public links, required files, README terms, and final blockers are tracked.");
+console.log("Submission audit passed: public links, required files, README terms, submission assets, and final blockers are tracked.");
