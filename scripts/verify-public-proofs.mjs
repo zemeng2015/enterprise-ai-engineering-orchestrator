@@ -102,9 +102,16 @@ if (release.tag_name !== "v2026-june-submission") {
   fail(`GitHub release has an unexpected tag: ${release.tag_name}`);
 }
 
-const hasSourceArchive = release.assets?.some((asset) => asset.name === "enterprise-ai-orchestrator-source.zip");
-if (!hasSourceArchive) {
-  fail("GitHub release does not include enterprise-ai-orchestrator-source.zip");
+const requiredReleaseAssets = [
+  "enterprise-ai-orchestrator-source.zip",
+  "release-risk-review-anna-app.zip",
+];
+
+for (const assetName of requiredReleaseAssets) {
+  const hasAsset = release.assets?.some((asset) => asset.name === assetName);
+  if (!hasAsset) {
+    fail(`GitHub release does not include ${assetName}`);
+  }
 }
 
 for (const snippet of htmlSnippets) {

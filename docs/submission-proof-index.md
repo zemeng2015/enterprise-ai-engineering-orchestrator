@@ -8,6 +8,7 @@ This index collects the public evidence links used by the June 2026 hackathon su
 - Hosted proof index JSON: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/submission-proof-index.json
 - Repository: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 - Stable release package: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/releases/tag/v2026-june-submission
+- Anna standalone zip: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/releases/download/v2026-june-submission/release-risk-review-anna-app.zip
 
 The live demo includes a `Submission Proofs` panel with public judging links for UiPath, Mind the Product, GitLab, Casper, and Anna.
 
