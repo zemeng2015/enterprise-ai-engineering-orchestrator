@@ -2,7 +2,7 @@
   "project": "Enterprise AI Engineering Orchestrator",
   "liveDemo": "https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/",
   "repository": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator",
-  "lastVerifiedCommit": "d4e8bb4",
+  "proofIndexVersion": "2026-06-19.1",
   "proofs": [
     {
       "track": "UiPath AgentHack",
