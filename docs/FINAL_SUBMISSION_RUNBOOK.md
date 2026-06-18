@@ -1,10 +1,10 @@
 # Final Submission Runbook
 
-Use this when finishing the UiPath AgentHack Devpost submission.
+Use this to audit or edit the UiPath AgentHack Devpost submission.
 
 ## Current Authoritative Links
 
-- Devpost project draft: `Enterprise AI Orchestrator for UiPath`
+- Devpost project: `Enterprise AI Orchestrator for UiPath`
 - Public demo: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
 - Public repository: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 - Deck: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/raw/main/docs/uipath-agenthack-presentation.pptx
@@ -66,10 +66,9 @@ Devpost final reminder items:
 
 ## Submit Step
 
-Only click `Submit project` after all required fields are filled and the final preview has been checked. After submitting, Devpost still allows edits until the submission deadline, but the submission should be treated as final for judging quality.
+Submitted. Devpost still allows edits until the submission deadline, but the submitted version should be treated as final for judging quality.
 
 ## Known Current Blockers
 
-- Devpost is ready at 4/5 steps with required fields saved.
-- The thumbnail still shows the placeholder image; this is optional and does not block required finalization.
-- Official Rules and Devpost Terms still need action-time confirmation before checking the box and clicking `Submit project`.
+- None for the first submitted version.
+- Optional polish: the thumbnail still shows the placeholder image; this does not block the submitted project.

@@ -4,40 +4,37 @@ Last updated: 2026-06-19
 
 ## UiPath AgentHack
 
-Status: **IN_PROGRESS**
+Status: **SUBMITTED**
 
 What is done:
 
 - Public GitHub repo is available.
 - GitHub Pages demo is live.
-- Devpost project draft exists.
-- Devpost draft is 4/5 steps complete.
+- Devpost project is submitted to UiPath AgentHack.
 - UiPath Automation Cloud invite has been completed.
 - UiPath Labs environment URL has been captured and saved in Devpost Additional info.
 - Devpost Additional info is saved with solo participation (`Individual`) and an empty team-name field.
 - Devpost Project Story has been replaced with the clean final story.
-- Public Devpost preview has been checked for the clean story, demo embed, public demo link, and absence of private email or one-time UiPath URL text.
+- Public Devpost page has been checked for the clean story, demo embed, public demo link, and absence of private email or one-time UiPath URL text.
 - Demo video URL is filled on Devpost.
 - Presentation deck path is present in the repo.
 - Devpost thumbnail asset is ready in `docs/screenshots/devpost-thumbnail.png`.
 - Local preflight passes: typecheck, build, submission files, and audit.
+- Final readiness passed after explicit Official Rules / Devpost Terms confirmation.
 
 Current blocker:
 
-- Final Devpost submission requires action-time confirmation before checking the Official Rules / Devpost Terms checkbox and clicking `Submit project`.
+- None for the first submitted version.
 
-Current Devpost draft issues observed:
+Current Devpost notes:
 
 - Devpost project thumbnail still shows the placeholder image. The local thumbnail asset is ready, but automated upload was not available in the current browser tooling.
-- Official Rules and Devpost Terms are not yet accepted.
-- Final `Submit project` has not been clicked.
+- Devpost allows edits until the hackathon deadline, but the first submitted version is complete.
 
 Remaining work:
 
-- Optionally upload `docs/screenshots/devpost-thumbnail.png` as the Devpost project thumbnail if a manual browser file picker is available.
-- Follow `docs/FINAL_SUBMISSION_RUNBOOK.md` for final field checks.
-- After explicit rules/terms confirmation, set `officialRulesReadyToAccept` in `submission.readiness.local.json`, rerun `npm run final-readiness`, then complete Devpost finalization.
-- Optionally update README/screenshots after real UiPath Labs access is connected.
+- Optional polish: upload `docs/screenshots/devpost-thumbnail.png` as the Devpost project thumbnail if a manual browser file picker is available.
+- Optional polish: update README/screenshots after deeper real UiPath Labs integration is connected.
 
 ## Active Public Links
 

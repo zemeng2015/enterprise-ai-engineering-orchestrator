@@ -13,11 +13,10 @@ Demo video: https://youtu.be/8AKMY8VoN7c
 Current UiPath AgentHack status:
 
 ```text
-Devpost draft: created
-Draft progress: 4/5 steps complete
+Devpost project: submitted
 UiPath Labs environment URL: saved in Devpost Additional info and local ignored readiness file
 Participation type: Individual
-Remaining blocker: action-time confirmation for Official Rules / Devpost Terms and final Submit project click
+Remaining blocker: none for the first submitted version
 ```
 
 ## UiPath AgentHack

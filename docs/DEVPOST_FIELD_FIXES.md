@@ -1,6 +1,6 @@
-# Devpost Field Fixes Before Final Submission
+# Devpost Field Fixes
 
-Use this checklist on the Devpost draft for `Enterprise AI Orchestrator for UiPath`.
+Use this checklist to audit or edit the submitted Devpost project for `Enterprise AI Orchestrator for UiPath`.
 
 ## Additional Info
 
@@ -36,6 +36,5 @@ Use this checklist on the Devpost draft for `Enterprise AI Orchestrator for UiPa
 
 - Verified: public project preview shows the clean story, embedded demo video, and public demo link.
 - Verified: public preview does not expose private email, token, credential, tenant secret, or one-time UiPath URL text.
-- Review Official Rules and Devpost Terms.
-- Check the terms checkbox only after review.
-- Click `Submit project` only after Labs URL, demo video URL, participation type, and terms are ready.
+- Verified: Official Rules and Devpost Terms were accepted after explicit confirmation.
+- Verified: project was submitted successfully.

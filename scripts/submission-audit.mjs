@@ -54,9 +54,9 @@ const requiredReadmeTerms = [
 ];
 
 const knownBlockerTerms = [
-  "Devpost is ready at 4/5 steps with required fields saved",
-  "thumbnail still shows the placeholder image",
-  "Official Rules and Devpost Terms still need action-time confirmation",
+  "None for the first submitted version",
+  "Submitted. Devpost still allows edits until the submission deadline",
+  "Optional polish: the thumbnail still shows the placeholder image",
 ];
 
 const imageRequirements = [
