@@ -224,10 +224,8 @@ The main challenge was avoiding a generic chatbot demo. The useful product surfa
 
 ### What's next
 
-- Add the UiPath Labs environment URL after access is provisioned.
-- Confirm whether the Devpost participation field should be `Individual` or `Team`.
-- Complete Devpost finalization.
-- Run the GitLab Duo skill against live GitLab Orbit context if access is available.
-- Connect GitLab MR and CI context.
-- Connect UiPath Automation Cloud and Test Cloud.
-- Add product analytics instrumentation for Mind the Product.
+- Keep the submitted Devpost pages updated with the public proof package when browser editing is available.
+- Run the GitLab Duo skill against live GitLab Orbit context if access becomes available.
+- Automate UiPath Test Cloud execution beyond the current manual `Passed` Test Manager proof.
+- Add a stronger Casper deploy or contract interaction that directly carries the audit hash.
+- Continue collecting product analytics signals from the installed Novus/Pendo SDK.

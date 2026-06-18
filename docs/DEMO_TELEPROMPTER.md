@@ -48,8 +48,8 @@ This is the core enterprise pattern: not autonomous production mutation, but gov
 
 ## Close
 
-The current public MVP uses safe simulated workflow state and does not call live customer systems or store credentials. UiPath Labs access has been requested, and the integration seam is ready to replace the simulated adapter with UiPath Automation Cloud and Test Cloud calls.
+The current public MVP uses safe simulated workflow state and does not call live customer systems or store credentials. The submission package includes UiPath Labs Test Manager proof with a manual Passed validation result, and the integration path is ready to replace the simulated adapter with automated UiPath Automation Cloud and Test Cloud calls.
 
-The public GitHub repository includes the README, setup instructions, UiPath component plan, demo script, presentation deck, screenshots, and MIT license.
+The public GitHub repository includes the README, setup instructions, UiPath component plan, demo script, presentation deck, proof index, stable release package, screenshots, and MIT license.
 
 Enterprise AI Engineering Orchestrator shows how coding agents, UiPath Test Cloud, UiPath Automation, and human approval can work together to make AI-assisted engineering faster without giving up release accountability.
