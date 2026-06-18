@@ -38,6 +38,7 @@ https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 - Must show the solution running.
 - Should walk through architecture, agents, orchestration, and human approval.
 - Should say clearly that the public MVP is safe/simulated until UiPath Labs access is connected.
+- Use `docs/VIDEO_RECORDING_PACKAGE.md` as the storyboard and frame checklist.
 
 ## Final Devpost Checklist
 

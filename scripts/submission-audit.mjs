@@ -27,9 +27,15 @@ const requiredFiles = [
   "STATUS.md",
   "docs/FINAL_SUBMISSION_RUNBOOK.md",
   "docs/DEMO_TELEPROMPTER.md",
+  "docs/VIDEO_RECORDING_PACKAGE.md",
   "docs/uipath-agenthack-presentation.pptx",
   "docs/screenshots/orchestrator-desktop.png",
   "docs/screenshots/orchestrator-mobile.png",
+  "docs/video-frames/01-overview-uipath.png",
+  "docs/video-frames/02-after-risk-scan.png",
+  "docs/video-frames/03-after-generate-tests.png",
+  "docs/video-frames/04-after-approval.png",
+  "docs/video-frames/05-public-github-repo.png",
 ];
 
 const requiredReadmeTerms = [

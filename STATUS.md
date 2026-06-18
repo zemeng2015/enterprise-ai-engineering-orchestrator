@@ -42,4 +42,5 @@ Use `enterprise-ai-engineering-orchestrator` as the primary Devpost submission r
 - Final runbook: `docs/FINAL_SUBMISSION_RUNBOOK.md`
 - Demo script: `DEMO_SCRIPT.md`
 - Teleprompter script: `docs/DEMO_TELEPROMPTER.md`
+- Video recording package: `docs/VIDEO_RECORDING_PACKAGE.md`
 - Devpost copy: `DEVPOST_DRAFTS.md`
