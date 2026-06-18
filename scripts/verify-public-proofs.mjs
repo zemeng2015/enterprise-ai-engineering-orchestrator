@@ -53,7 +53,7 @@ const proofLinks = [
   {
     label: "Band-ready multi-agent collaboration proof",
     url: "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/band-of-agents-readiness.md",
-    requiredText: "Band-ready local proof",
+    requiredText: "local proof command",
   },
 ];
 
