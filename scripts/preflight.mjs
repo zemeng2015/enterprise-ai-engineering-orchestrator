@@ -16,6 +16,7 @@ const requiredFiles = [
   "docs/band-of-agents-readiness.md",
   "docs/pending-submission-field-packets.md",
   "docs/pending-submission-fields.json",
+  "docs/h0-zero-stack-evaluation.md",
   "anna-app/release-risk-review/manifest.json",
   "anna-app/release-risk-review/ui/index.html",
   "anna-app/release-risk-review/executas/release-risk-review/tool.mjs",

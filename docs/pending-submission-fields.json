@@ -29,5 +29,22 @@
     "proofArtifact": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/outputs/band-agent-collaboration-proof.json",
     "verificationCommand": "npm run band:proof",
     "boundary": "Local Band-ready proof; does not claim live Band API transcript until account/API access is available."
+  },
+  "conditionalCandidates": {
+    "h0ZeroStack": {
+      "status": "evaluated-not-ready",
+      "deadline": "2026-06-29 17:00 PDT",
+      "page": "https://h01.devpost.com/",
+      "evaluationDoc": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/h0-zero-stack-evaluation.md",
+      "potentialTrack": "Monetizable B2B App or Open Innovation",
+      "requiredExternalProof": [
+        "Vercel Project Link",
+        "Vercel Team ID",
+        "AWS Database usage screenshot",
+        "Architecture diagram connecting front end and back-end components",
+        "Demo video under 3 minutes explaining AWS Database usage"
+      ],
+      "recommendation": "Do not submit with the current GitHub Pages/Vite/local-state proof. Pursue only if Vercel/v0 and AWS Database access can be completed."
+    }
   }
 }

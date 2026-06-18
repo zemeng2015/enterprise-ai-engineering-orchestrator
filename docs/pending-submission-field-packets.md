@@ -136,3 +136,33 @@ Highest-value edits when Devpost browser access is recovered:
 - UiPath: add Test Manager passed proof and dashboard proof links.
 - Mind the Product: add Novus/Pendo dashboard proof link.
 - GitLab: no urgent edit needed; public page already exposes GitLab Orbit wording and the skill artifact path.
+
+## Conditional Candidate: H0 Zero Stack
+
+Status: evaluated but not accepted as a ready submission.
+
+Use only if Vercel/v0 and AWS Database proof can be created before the deadline.
+
+```text
+Hackathon: H0: Hack the Zero Stack with Vercel v0 and AWS Databases
+Deadline: June 29, 2026 at 5:00 PM PDT
+Potential track: Monetizable B2B App or Open Innovation
+Evaluation doc: docs/h0-zero-stack-evaluation.md
+```
+
+Required external proof before honest submission:
+
+```text
+Vercel Project Link: <required>
+Vercel Team ID: <required>
+AWS Database used: DynamoDB or Aurora/Aurora DSQL <required>
+AWS Database usage screenshot: <required>
+Architecture diagram: <required>
+Demo video under 3 minutes explaining AWS Database usage: <required>
+```
+
+Current recommendation:
+
+```text
+Do not submit H0 with the current GitHub Pages/Vite/local-state proof. Prepare only if Vercel/v0 and AWS Database access can be completed.
+```
