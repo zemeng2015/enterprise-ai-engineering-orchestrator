@@ -54,7 +54,7 @@ function App() {
     if (mode === "casper") {
       return {
         title: "Audit receipt ready",
-        body: "Release decision hash is prepared for Casper Testnet anchoring before final judging submission.",
+        body: "Release decision hash is paired with a verified Casper Testnet transaction proof.",
         action: "Approve Receipt",
       };
     }
@@ -307,6 +307,14 @@ function App() {
                 <div>
                   <dt>Status</dt>
                   <dd>{casperAuditProof.transactionStatus}</dd>
+                </div>
+                <div>
+                  <dt>Explorer proof</dt>
+                  <dd>
+                    <a href={casperAuditProof.explorerUrl} target="_blank" rel="noreferrer">
+                      View Testnet transaction
+                    </a>
+                  </dd>
                 </div>
               </dl>
             </section>

@@ -122,7 +122,7 @@ export const casperAuditProof = {
   decision: "hold-for-human-review",
   payloadHash: "be704f66fb2e9aa63f41e86e765c20f0120027651d4bca63b27ce85d2bc9ee01",
   chain: "casper-test",
-  transactionStatus: "pending-testnet-funding",
-  explorerUrl: "Pending real Casper Testnet deploy or transfer hash",
+  transactionStatus: "success-testnet-faucet-transfer",
+  explorerUrl: "https://testnet.cspr.live/transaction/6b2bad1bfd8fb5bd57d344310a0876c05ff454513df793b43f5b87e6e3f8af84",
   generatedBy: "scripts/casper-audit-proof.mjs",
 };

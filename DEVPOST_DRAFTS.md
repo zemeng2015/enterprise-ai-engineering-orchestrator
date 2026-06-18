@@ -179,7 +179,13 @@ The Casper extension turns an AI-assisted release decision into a verifiable aud
 
 ### Casper angle
 
-The project fits Casper by anchoring high-value enterprise agent decisions to a public testnet proof. Instead of treating an AI workflow as a black box, the release audit payload can be hashed and correlated to a Casper Testnet transaction-producing component.
+The project fits Casper by anchoring high-value enterprise agent decisions to a public testnet proof. Instead of treating an AI workflow as a black box, the release audit payload is hashed and correlated to a verified Casper Testnet transaction for the demo account.
+
+Verified Testnet proof:
+
+`https://testnet.cspr.live/transaction/6b2bad1bfd8fb5bd57d344310a0876c05ff454513df793b43f5b87e6e3f8af84`
+
+This proof shows a successful `5,000.00 CSPR` faucet transfer to the Casper Snap account used by the demo. The current submission should describe this honestly as a Testnet transfer/audit receipt workflow, not as a custom smart-contract deployment.
 
 ### Built with
 
@@ -191,11 +197,11 @@ React, TypeScript, Vite, Node.js crypto, Casper Testnet proof workflow.
 2. Show the release-risk context and human approval state.
 3. Show the Casper receipt panel.
 4. Run `npm run casper:proof` and show `outputs/casper-audit-proof.json`.
-5. Open the Casper Testnet explorer URL after the real transaction/deploy hash is available.
+5. Open the Casper Testnet explorer URL and show the successful transaction.
 
 ### Safety note
 
-The current repo prepares the audit payload and proof hash. Do not final-submit this Casper entry until the proof is backed by a real Casper Testnet transaction or deployed on-chain component.
+The current repo prepares the audit payload and proof hash, and now includes a real Casper Testnet transaction proof. A stronger optional enhancement would be a custom Casper deploy or contract interaction that directly carries the audit hash.
 
 ## Shared Answers
 
