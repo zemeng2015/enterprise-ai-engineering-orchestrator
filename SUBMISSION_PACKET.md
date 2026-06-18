@@ -126,7 +126,10 @@ The main challenge is designing an agent workflow that feels enterprise-trustwor
 
 ## Current Submission Blockers
 
+- UiPath AgentHack Devpost draft exists and is currently 3/5 steps complete.
+- UiPath Labs access request has been submitted; final Devpost completion is blocked on the required UiPath Labs environment URL.
+- Demo video is still needed before final submission.
+- Finalization step on Devpost is still pending.
 - Mind the Product final submission should wait for Novus.ai installation on the live deployed project and a Novus dashboard screenshot.
 - Mind the Product also requires a 2-3 minute demo video hosted on YouTube, Vimeo, or Loom.
 - GitLab Transcend project draft creation is blocked by a visible reCAPTCHA challenge on Devpost.
-- UiPath Labs access request needs the email address and city to submit for Zack's sandbox access.

@@ -10,6 +10,16 @@ Demo URL: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
 Demo video: TBD
 ```
 
+Current UiPath AgentHack status:
+
+```text
+Devpost draft: created
+Draft progress: 3/5 steps complete
+UiPath Labs request: submitted
+Blocking field: UiPath Labs environment URL
+Remaining submission asset: demo video
+```
+
 ## UiPath AgentHack
 
 ### Project title
@@ -141,8 +151,9 @@ The main challenge was avoiding a generic chatbot demo. The useful product surfa
 
 ### What's next
 
-- Push public GitHub repo.
-- Deploy the demo.
+- Add the UiPath Labs environment URL after access is provisioned.
+- Record and host the demo video.
+- Complete Devpost finalization.
 - Connect GitLab MR and CI context.
 - Connect UiPath Automation Cloud and Test Cloud.
 - Add product analytics instrumentation for Mind the Product.
