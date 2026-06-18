@@ -15,6 +15,7 @@ What is done:
 - UiPath Labs access request has been submitted.
 - Demo video URL is filled on Devpost.
 - Presentation deck path is present in the repo.
+- Devpost thumbnail asset is ready in `docs/screenshots/devpost-thumbnail.png`.
 - Local preflight passes: typecheck, build, submission files, and audit.
 
 Current blocker:
@@ -34,6 +35,7 @@ Remaining work:
 - Add UiPath Labs URL to Devpost when received.
 - Confirm whether the Devpost participation field should be `Individual` or `Team`.
 - Replace the duplicated Project Story with the clean final story from `DEVPOST_DRAFTS.md`.
+- Optionally upload `docs/screenshots/devpost-thumbnail.png` as the Devpost project thumbnail.
 - Follow `docs/FINAL_SUBMISSION_RUNBOOK.md` for final field checks.
 - Fill the real Labs URL in `submission.readiness.local.json` and run `npm run final-readiness`.
 - Complete Devpost finalization.

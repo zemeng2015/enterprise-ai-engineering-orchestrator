@@ -26,6 +26,7 @@ Use this checklist on the Devpost draft for `Enterprise AI Orchestrator for UiPa
 
 ## Project Details
 
+- Upload `docs/screenshots/devpost-thumbnail.png` as the project thumbnail if the page still shows the placeholder image.
 - Confirm the demo video URL is still `https://youtu.be/8AKMY8VoN7c`.
 - Replace the current project story with the clean `Final project story` from `DEVPOST_DRAFTS.md`; the public preview currently shows duplicated Markdown headings.
 - Confirm the project description says UiPath is the orchestration/governance layer.

@@ -29,6 +29,7 @@ The same demo can be described differently per submission:
 - [Devpost draft copy](./DEVPOST_DRAFTS.md)
 - [Deployment prep](./DEPLOYMENT.md)
 - [UiPath AgentHack presentation deck](./docs/uipath-agenthack-presentation.pptx)
+- [Devpost thumbnail asset](./docs/screenshots/devpost-thumbnail.png)
 
 ## UiPath AgentHack Readiness
 

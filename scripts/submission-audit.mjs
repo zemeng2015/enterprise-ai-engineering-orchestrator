@@ -31,6 +31,7 @@ const requiredFiles = [
   "docs/DEVPOST_FIELD_FIXES.md",
   "docs/VIDEO_RECORDING_PACKAGE.md",
   "docs/uipath-agenthack-presentation.pptx",
+  "docs/screenshots/devpost-thumbnail.png",
   "docs/screenshots/orchestrator-desktop.png",
   "docs/screenshots/orchestrator-mobile.png",
   "docs/video-frames/01-overview-uipath.png",

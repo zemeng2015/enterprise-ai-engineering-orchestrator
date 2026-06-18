@@ -9,6 +9,7 @@ Use this when finishing the UiPath AgentHack Devpost submission.
 - Public repository: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 - Deck: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/raw/main/docs/uipath-agenthack-presentation.pptx
 - Demo video: https://youtu.be/8AKMY8VoN7c
+- Thumbnail asset: `docs/screenshots/devpost-thumbnail.png`
 - Official rules review notes: `docs/OFFICIAL_RULES_REVIEW_NOTES.md`
 
 ## Before Finalizing
@@ -33,10 +34,11 @@ https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 5. Confirm the demo video URL is still `https://youtu.be/8AKMY8VoN7c`.
 6. If submitting solo, set the participation field to `Individual` rather than `Team`.
 7. Replace the duplicated Project Story headings with the clean final story from `DEVPOST_DRAFTS.md`.
-8. Follow `docs/DEVPOST_FIELD_FIXES.md` for the field-by-field final pass.
-9. Preview the public project page and confirm there is no private email, token, credential, or unsupported claim.
-10. Review `docs/OFFICIAL_RULES_REVIEW_NOTES.md`, the official rules, and the Devpost Terms before checking the final terms box.
-11. Update local `submission.readiness.local.json` flags only after the matching Devpost field has actually been saved and checked.
+8. Optionally upload `docs/screenshots/devpost-thumbnail.png` as the Devpost thumbnail to replace the placeholder image.
+9. Follow `docs/DEVPOST_FIELD_FIXES.md` for the field-by-field final pass.
+10. Preview the public project page and confirm there is no private email, token, credential, or unsupported claim.
+11. Review `docs/OFFICIAL_RULES_REVIEW_NOTES.md`, the official rules, and the Devpost Terms before checking the final terms box.
+12. Update local `submission.readiness.local.json` flags only after the matching Devpost field has actually been saved and checked.
 
 ## Demo Video Requirements
 

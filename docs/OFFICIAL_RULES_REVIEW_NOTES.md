@@ -30,6 +30,7 @@ These notes are a submission checklist, not legal advice. Zack should personally
 - Public demo: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
 - Demo video: https://youtu.be/8AKMY8VoN7c
 - Presentation deck: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/raw/main/docs/uipath-agenthack-presentation.pptx
+- Thumbnail asset: `docs/screenshots/devpost-thumbnail.png`
 - License: `LICENSE` contains MIT.
 - README includes UiPath Test Cloud, UiPath workflow automation, coded-agent logic, low-code UiPath workflow intent, and setup instructions.
 - Local `npm run submission-audit` checks the public demo, public repo, deck link, required files, README terms, and final blockers.
