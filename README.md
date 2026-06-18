@@ -146,6 +146,12 @@ Run the Anna proof:
 npm run anna:proof
 ```
 
+Generate a standalone Anna submission zip:
+
+```bash
+npm run anna:package
+```
+
 Current boundary: the Anna package is a runnable hackathon artifact and local proof, not a published Anna App Store listing. See [Anna readiness](./docs/anna-ai-native-readiness.md).
 
 ## Public Demo

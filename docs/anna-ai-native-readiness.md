@@ -23,6 +23,8 @@ Anna hackathon materials say a submission can be a shareable Anna App, runnable 
 - Executa-style local tool: `anna-app/release-risk-review/executas/release-risk-review/tool.mjs`
 - Skill card: `anna-app/release-risk-review/skills/release-risk-review/SKILL.md`
 - Local proof command: `npm run anna:proof`
+- Package command: `npm run anna:package`
+- Stable package asset: `https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/releases/download/v2026-june-submission/release-risk-review-anna-app.zip`
 
 ## Local Verification
 
@@ -36,6 +38,12 @@ Expected result:
 
 ```text
 Anna App proof passed: manifest, UI bundle, local Executa tool, and human-review workflow are ready.
+```
+
+Generate the standalone Anna submission zip:
+
+```bash
+npm run anna:package
 ```
 
 ## Submission Copy
@@ -68,6 +76,12 @@ Anna connection:
 
 ```text
 The repository includes a schema-2 Anna App manifest, static UI bundle, local Executa-style tool, and Skill card under `anna-app/release-risk-review/`. This mirrors Anna's app model: UI, tools, state, permissions, and human review around one workflow.
+```
+
+Standalone package:
+
+```text
+https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/releases/download/v2026-june-submission/release-risk-review-anna-app.zip
 ```
 
 Boundary:

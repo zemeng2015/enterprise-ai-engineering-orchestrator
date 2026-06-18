@@ -233,6 +233,7 @@ The repository includes a schema-2 Anna App manifest, static UI bundle, local Ex
 - Anna package path: `anna-app/release-risk-review/`
 - Readiness doc: `docs/anna-ai-native-readiness.md`
 - Local proof command: `npm run anna:proof`
+- Standalone Anna zip: `https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/releases/download/v2026-june-submission/release-risk-review-anna-app.zip`
 - Demo video: `https://youtu.be/8AKMY8VoN7c`
 
 ### Boundary
