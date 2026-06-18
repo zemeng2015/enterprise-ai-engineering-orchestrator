@@ -29,9 +29,10 @@ Position as:
 UiPath components to describe:
 
 - UiPath Automation as the orchestration and governance layer.
-- UiPath Test Cloud as the planned execution surface for impacted test runs.
+- UiPath Test Cloud / Test Manager as the validation surface for impacted test runs.
 - Human approval task before release promotion.
 - Codex-style coding agent for test generation and repair.
+- Real UiPath Labs proof: Test Manager project plus a manual `Passed` validation result for the release-risk gate.
 
 Demo emphasis:
 
@@ -39,6 +40,9 @@ Demo emphasis:
 2. Show impacted tests and evidence.
 3. Generate test drafts.
 4. Route release approval through human governance.
+5. Reference the UiPath Test Manager proof screenshots:
+   - https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/uipath-test-manager-project-dashboard-running.png
+   - https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/uipath-test-manager-execution-passed.png
 
 ## GitLab Transcend Positioning
 
@@ -115,6 +119,7 @@ Demo emphasis:
 - No credentials, cookies, localStorage/sessionStorage scraping, or browser session access.
 - No external mutations.
 - Integration points are represented as safe demo states and can be gated later.
+- Exception for submitted proof work: the UiPath Labs sandbox contains a Test Manager project and a manual passed test execution created for this hackathon submission.
 
 ## Suggested Devpost Fields
 
@@ -152,7 +157,7 @@ The main challenge is designing an agent workflow that feels enterprise-trustwor
 ## Current Submission Blockers
 
 - UiPath AgentHack is submitted on Devpost.
-- UiPath Labs Automation Cloud access is available, but Test Manager/Test Cloud project creation is blocked by missing license assignment.
+- UiPath Labs Automation Cloud and Test Manager are accessible. A Test Manager project exists, and the release-risk manual validation has been marked `Passed`. The overall execution detail still displays `Running`, but the result row is `Passed` with `1 passed / 0 failed / 0 not executed`.
 - Demo video is hosted and filled on Devpost: https://youtu.be/8AKMY8VoN7c
 - Mind the Product is submitted. Novus/Pendo is installed and public proof is available:
   https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/novus-dashboard-live-after-install.png

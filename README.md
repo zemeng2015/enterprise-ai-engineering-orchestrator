@@ -32,6 +32,7 @@ The same demo can be described differently per submission:
 - [GitLab Transcend readiness](./docs/gitlab-transcend-readiness.md)
 - [Casper Agentic Buildathon readiness](./docs/casper-agentic-buildathon-readiness.md)
 - [UiPath AgentHack presentation deck](./docs/uipath-agenthack-presentation.pptx)
+- [UiPath Test Manager passed execution proof](./docs/uipath-test-manager-execution-passed.png)
 - [Devpost thumbnail asset](./docs/screenshots/devpost-thumbnail.png)
 
 ## GitLab Transcend Readiness
@@ -64,14 +65,19 @@ Enterprise AI Engineering Orchestrator helps enterprise engineering teams turn r
 
 ### UiPath Components
 
-The current public MVP demonstrates the orchestration and decision layer. The intended UiPath implementation path is:
+The current public MVP demonstrates the orchestration and decision layer. The UiPath Labs sandbox also contains a Test Manager project and a manual validation run for the release-risk gate. Public proof screenshots:
+
+- [UiPath Test Manager project dashboard](./docs/uipath-test-manager-project-dashboard-running.png)
+- [UiPath Test Manager passed execution](./docs/uipath-test-manager-execution-passed.png)
+
+The intended UiPath implementation path is:
 
 - UiPath Test Cloud for approved validation execution.
 - UiPath workflow automation for moving from release-risk review to test action.
 - UiPath Labs sandbox environment for judging once access is provisioned.
 - Human approval gates before agentic automation changes release state.
 
-UiPath Labs access has been requested. The live Test Cloud adapter is pending sandbox access and is not represented as complete in this repository.
+Current boundary: the public web demo still uses safe simulated workflow state and does not call live UiPath APIs. The Labs Test Manager proof shows the judging sandbox project and manual passed validation evidence; a production adapter that automatically creates and closes Test Cloud runs remains future work.
 
 ### Agent Type
 
@@ -102,7 +108,7 @@ http://127.0.0.1:5178/
 
 4. Use the UiPath positioning mode in the left rail, run the release-risk workflow, inspect generated test recommendations, and approve or review the release checkpoint.
 
-5. For production UiPath integration, replace the simulated execution adapter with UiPath Test Cloud calls after a UiPath Labs environment URL is available.
+5. For production UiPath integration, replace the simulated execution adapter with UiPath Test Cloud calls.
 
 ## Casper Agentic Buildathon Readiness
 
@@ -157,6 +163,7 @@ npm audit --audit-level=high
 - No credentials, tokens, cookies, or browser storage are collected.
 - External integrations are represented as demo states and can be wired later behind explicit safety gates.
 - Mind the Product has been submitted with a hosted demo video and Novus/Pendo installed on the live GitHub Pages demo. Public Novus proof: https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/novus-dashboard-live-after-install.png
+- UiPath AgentHack has been submitted. UiPath Labs Test Manager proof is available in `docs/uipath-test-manager-execution-passed.png`.
 
 ## License
 
