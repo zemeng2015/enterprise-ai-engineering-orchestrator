@@ -10,6 +10,7 @@
     "preview": "vite preview --host 127.0.0.1",
     "preflight": "node scripts/preflight.mjs",
     "submission-audit": "node scripts/submission-audit.mjs",
+    "verify:proofs": "node scripts/verify-public-proofs.mjs",
     "final-readiness": "node scripts/final-readiness.mjs",
     "casper:proof": "node scripts/casper-audit-proof.mjs"
   },

@@ -26,6 +26,7 @@ The same demo can be described differently per submission:
 ## Submission Materials
 
 - [Submission packet draft](./SUBMISSION_PACKET.md)
+- [Public submission proof index](./docs/submission-proof-index.md)
 - [5-minute demo script](./DEMO_SCRIPT.md)
 - [Devpost draft copy](./DEVPOST_DRAFTS.md)
 - [Deployment prep](./DEPLOYMENT.md)
@@ -155,6 +156,12 @@ Security check:
 
 ```bash
 npm audit --audit-level=high
+```
+
+Public proof verification:
+
+```bash
+npm run verify:proofs
 ```
 
 ## Current Submission Notes
