@@ -13,6 +13,7 @@ What is done:
 - Devpost project draft exists.
 - Devpost draft is 3/5 steps complete.
 - UiPath Labs access request has been submitted.
+- UiPath Automation Cloud invite has been found in Gmail; account invite completion is pending explicit user confirmation.
 - Demo video URL is filled on Devpost.
 - Presentation deck path is present in the repo.
 - Devpost thumbnail asset is ready in `docs/screenshots/devpost-thumbnail.png`.
@@ -25,6 +26,7 @@ Current blocker:
 Current Devpost draft issues observed:
 
 - Additional Info still has an empty UiPath Labs environment URL.
+- UiPath invite completion is waiting at the final account setup step; do not invent a Labs URL.
 - Participation is currently saved as `Team`; change to `Individual` if Zack is submitting solo.
 - Project Story currently shows duplicated empty Markdown headings before the real story.
 - Official Rules and Devpost Terms are not yet accepted.
@@ -33,6 +35,7 @@ Current Devpost draft issues observed:
 Remaining work:
 
 - Add UiPath Labs URL to Devpost when received.
+- Complete the UiPath Automation Cloud invite after explicit confirmation, then capture the real Labs environment URL.
 - Confirm whether the Devpost participation field should be `Individual` or `Team`.
 - Replace the duplicated Project Story with the clean final story from `DEVPOST_DRAFTS.md`.
 - Optionally upload `docs/screenshots/devpost-thumbnail.png` as the Devpost project thumbnail.

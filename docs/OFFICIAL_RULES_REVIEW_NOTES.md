@@ -34,10 +34,12 @@ These notes are a submission checklist, not legal advice. Zack should personally
 - License: `LICENSE` contains MIT.
 - README includes UiPath Test Cloud, UiPath workflow automation, coded-agent logic, low-code UiPath workflow intent, and setup instructions.
 - Local `npm run submission-audit` checks the public demo, public repo, deck link, required files, README terms, and final blockers.
+- UiPath Automation Cloud invite has been found; the final account invite step is pending explicit user confirmation.
 
 ## Pending Before Final Submit
 
 - Paste the real UiPath Labs environment URL into Devpost Additional info.
+- Complete the UiPath Automation Cloud invite and capture the real environment URL; do not use a guessed or placeholder URL.
 - If Zack is submitting solo, save Devpost participation as `Individual` rather than `Team`.
 - Replace the current Devpost project story because the public preview shows duplicated empty Markdown headings.
 - Preview the public Devpost page after those edits and confirm no private email, token, credential, tenant secret, or unsupported live-platform claim appears.
