@@ -59,6 +59,38 @@ React, TypeScript, Vite, Lucide React, local simulated workflow state.
 
 This MVP does not call live UiPath or customer systems yet. No credentials or tokens are collected. The demo keeps external integrations mocked until the authorization and platform setup are complete.
 
+### Final project story
+
+```markdown
+## Inspiration
+
+Enterprise QA and release teams often have the same problem: the work is not a lack of dashboards, it is the gap between repository changes, CI signal, process ownership, and a clear human decision. UiPath AgentHack is a strong fit because agentic automation should help teams turn release risk into governed action instead of yet another isolated report.
+
+## What it does
+
+Enterprise AI Orchestrator turns a release into an operator-style workflow: it summarizes delivery context, highlights risk, proposes generated test coverage, and keeps a human approval step before automation proceeds. For UiPath, the intended path is to connect this workflow to UiPath Test Cloud and agentic automation so release teams can move from risk review to executable validation.
+
+## How we built it
+
+The MVP is a React + TypeScript + Vite application with a compact enterprise workflow interface, simulated repository/CI signals, risk scoring, generated test recommendations, and an audit-friendly decision queue. The public demo, source repository, demo video, and submission deck are available now, and the UiPath Labs access request has been submitted so the next iteration can connect the workflow to a real UiPath sandbox.
+
+## Challenges
+
+The main challenge was keeping the demo honest: the current version shows the orchestration pattern and human-governed workflow, while the live UiPath Test Cloud integration is pending sandbox access. The product is structured so the simulated automation layer can be replaced with UiPath execution once access arrives.
+
+## Accomplishments
+
+We shipped a public demo, source repository, submission packet, presentation deck, and demo video in one working session. The project is positioned as a practical bridge between enterprise release governance and agentic process automation.
+
+## What we learned
+
+The useful agentic layer is not only test generation; it is the evidence trail around risk, generated actions, and human approval. The interface needs to make automation decisions inspectable before teams trust it in a release workflow.
+
+## What's next
+
+Next steps are to connect UiPath Test Cloud, add robot/test execution status, persist audit trails, and package the workflow as a repeatable release-readiness assistant for enterprise engineering teams.
+```
+
 ## GitLab Transcend Hackathon
 
 ### Project title
