@@ -225,6 +225,7 @@ button {
     "risk workflow context"
     "tests tests approval"
     "tests tests evidence"
+    "tests tests proofs"
     "tests tests casper";
   gap: 14px;
 }
@@ -264,6 +265,11 @@ button {
 
 .evidence-panel {
   grid-area: evidence;
+  padding: 16px;
+}
+
+.proof-panel {
+  grid-area: proofs;
   padding: 16px;
 }
 
@@ -605,6 +611,47 @@ td span {
   font-weight: 800;
 }
 
+.proof-list {
+  display: grid;
+  gap: 8px;
+}
+
+.proof-list a {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  color: inherit;
+  text-decoration: none;
+}
+
+.proof-list a:hover {
+  border-color: var(--line-strong);
+  background: var(--teal-soft);
+}
+
+.proof-list a span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 760;
+  text-transform: uppercase;
+}
+
+.proof-list a strong {
+  color: var(--teal-dark);
+  font-size: 13px;
+}
+
+.proof-list a p {
+  margin: 0;
+  color: #314049;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
 .receipt-list {
   display: grid;
   gap: 8px;
@@ -672,6 +719,7 @@ td span {
       "workflow approval"
       "tests tests"
       "evidence evidence"
+      "proofs proofs"
       "casper casper";
   }
 }
@@ -730,6 +778,7 @@ td span {
       "approval"
       "tests"
       "evidence"
+      "proofs"
       "casper";
   }
 

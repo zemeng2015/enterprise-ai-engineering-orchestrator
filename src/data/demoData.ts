@@ -17,6 +17,13 @@ export type WorkflowStep = {
   evidence: string;
 };
 
+export type ProofLink = {
+  label: string;
+  target: string;
+  href: string;
+  note: string;
+};
+
 export const positioning = {
   uipath: {
     name: "UiPath AgentHack",
@@ -115,6 +122,33 @@ export const evidenceLog = [
   "Detected auth callback contract change with no matching test update.",
   "Generated JUnit skeleton for OAuth nonce replay scenario.",
   "Prepared UiPath human-in-the-loop approval task.",
+];
+
+export const proofLinks: ProofLink[] = [
+  {
+    label: "UiPath Test Manager",
+    target: "AgentHack Track 3",
+    href: "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/uipath-test-manager-execution-passed.png",
+    note: "Manual release-risk validation result marked Passed in the UiPath Labs tenant.",
+  },
+  {
+    label: "Novus / Pendo",
+    target: "Mind the Product",
+    href: "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/novus-dashboard-live-after-install.png",
+    note: "Live GitHub Pages demo mapped by Novus/Pendo with dashboard proof.",
+  },
+  {
+    label: "GitLab Duo Skill",
+    target: "GitLab Transcend",
+    href: "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/blob/main/skills/release-risk-orbit/SKILL.md",
+    note: "Project-level skill artifact for Orbit-style release-risk evidence.",
+  },
+  {
+    label: "Casper Testnet",
+    target: "Casper Buildathon",
+    href: "https://testnet.cspr.live/transaction/6b2bad1bfd8fb5bd57d344310a0876c05ff454513df793b43f5b87e6e3f8af84",
+    note: "Verified Testnet transaction paired with the generated audit receipt.",
+  },
 ];
 
 export const casperAuditProof = {

@@ -15,7 +15,7 @@ import {
   Sparkles,
   TestTube2,
 } from "lucide-react";
-import { casperAuditProof, evidenceLog, HackathonMode, positioning, tests, workflow } from "./data/demoData";
+import { casperAuditProof, evidenceLog, HackathonMode, positioning, proofLinks, tests, workflow } from "./data/demoData";
 
 const nav = [
   { label: "Release Risk", icon: Activity },
@@ -93,7 +93,7 @@ function App() {
 
         <div className="sidebar-footer">
           <span className="tiny-label">Demo targets</span>
-          <strong>3 submissions</strong>
+          <strong>4 tracks</strong>
         </div>
       </aside>
 
@@ -276,6 +276,25 @@ function App() {
                 </li>
               ))}
             </ol>
+          </section>
+
+          <section className="panel proof-panel">
+            <div className="panel-header compact">
+              <div>
+                <span className="tiny-label">Submission Proofs</span>
+                <h2>Public judging links</h2>
+              </div>
+              <Link2 size={18} />
+            </div>
+            <div className="proof-list">
+              {proofLinks.map((proof) => (
+                <a href={proof.href} target="_blank" rel="noreferrer" key={proof.href}>
+                  <span>{proof.target}</span>
+                  <strong>{proof.label}</strong>
+                  <p>{proof.note}</p>
+                </a>
+              ))}
+            </div>
           </section>
 
           {mode === "casper" ? (
