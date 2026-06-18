@@ -53,8 +53,8 @@ const requiredReadmeTerms = [
 
 const knownBlockerTerms = [
   "UiPath Labs environment URL is still required",
-  "Demo video URL is still required",
   "participation field currently needs a solo/team sanity check",
+  "Official Rules and Devpost Terms still need final review",
 ];
 
 function fail(message) {
@@ -100,4 +100,4 @@ for (const { label, url, requiredText, binary } of links) {
   }
 }
 
-console.log("Submission audit passed: public links, required files, README terms, and known blockers are tracked.");
+console.log("Submission audit passed: public links, required files, README terms, and final blockers are tracked.");

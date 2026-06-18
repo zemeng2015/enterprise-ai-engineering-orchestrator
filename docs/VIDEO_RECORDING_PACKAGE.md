@@ -40,4 +40,4 @@ Keep the video under 5 minutes. Avoid showing private browser tabs, email, crede
 
 ## Upload
 
-Upload the final video to YouTube, Vimeo, or Loom. Then paste the video URL into the Devpost project form before finalization.
+Final hosted video URL filled on Devpost: https://youtu.be/8AKMY8VoN7c

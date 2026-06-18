@@ -7,7 +7,7 @@ Shared links to fill in later:
 ```text
 GitHub repo: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 Demo URL: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
-Demo video: TBD
+Demo video: https://youtu.be/8AKMY8VoN7c
 ```
 
 Current UiPath AgentHack status:
@@ -17,7 +17,7 @@ Devpost draft: created
 Draft progress: 3/5 steps complete
 UiPath Labs request: submitted
 Blocking field: UiPath Labs environment URL
-Remaining submission asset: demo video
+Remaining field sanity check: participation type should be Individual if Zack is submitting solo
 ```
 
 ## UiPath AgentHack
@@ -152,7 +152,7 @@ The main challenge was avoiding a generic chatbot demo. The useful product surfa
 ### What's next
 
 - Add the UiPath Labs environment URL after access is provisioned.
-- Record and host the demo video.
+- Confirm whether the Devpost participation field should be `Individual` or `Team`.
 - Complete Devpost finalization.
 - Connect GitLab MR and CI context.
 - Connect UiPath Automation Cloud and Test Cloud.

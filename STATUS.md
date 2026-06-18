@@ -13,6 +13,7 @@ What is done:
 - Devpost project draft exists.
 - Devpost draft is 3/5 steps complete.
 - UiPath Labs access request has been submitted.
+- Demo video URL is filled on Devpost.
 - Presentation deck path is present in the repo.
 - Local preflight passes: typecheck, build, submission files, and audit.
 
@@ -23,9 +24,9 @@ Current blocker:
 Remaining work:
 
 - Add UiPath Labs URL to Devpost when received.
-- Record and upload the demo video.
+- Confirm whether the Devpost participation field should be `Individual` or `Team`.
 - Follow `docs/FINAL_SUBMISSION_RUNBOOK.md` for final field checks.
-- Fill `submission.readiness.local.json` locally and run `npm run final-readiness` when Labs/video URLs are available.
+- Fill the real Labs URL in `submission.readiness.local.json` and run `npm run final-readiness`.
 - Complete Devpost finalization.
 - Optionally update README/screenshots after real UiPath Labs access is connected.
 
@@ -33,6 +34,7 @@ Remaining work:
 
 - Demo: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
 - Repository: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
+- Demo video: https://youtu.be/8AKMY8VoN7c
 
 ## Decision
 

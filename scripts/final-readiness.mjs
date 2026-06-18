@@ -22,6 +22,11 @@ function isHttpsUrl(value) {
   }
 }
 
+function hasPlaceholder(value) {
+  const normalized = String(value || "").toLowerCase();
+  return normalized.includes("replace-with") || normalized.includes("placeholder") || normalized.includes("example.com");
+}
+
 function isDemoVideoUrl(value) {
   if (!isHttpsUrl(value)) {
     return false;
@@ -49,8 +54,8 @@ try {
 
 const errors = [];
 
-if (!isHttpsUrl(config.uipathLabsEnvironmentUrl || "")) {
-  errors.push("uipathLabsEnvironmentUrl must be a real HTTPS URL from UiPath Labs.");
+if (!isHttpsUrl(config.uipathLabsEnvironmentUrl || "") || hasPlaceholder(config.uipathLabsEnvironmentUrl)) {
+  errors.push("uipathLabsEnvironmentUrl must be a real HTTPS URL from UiPath Labs, not a placeholder.");
 }
 
 if (!isDemoVideoUrl(config.demoVideoUrl || "")) {

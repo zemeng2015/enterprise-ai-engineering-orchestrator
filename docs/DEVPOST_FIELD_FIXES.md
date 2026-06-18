@@ -26,7 +26,7 @@ Use this checklist on the Devpost draft for `Enterprise AI Orchestrator for UiPa
 
 ## Project Details
 
-- Add the demo video URL after uploading to YouTube, Vimeo, or Loom.
+- Confirm the demo video URL is still `https://youtu.be/8AKMY8VoN7c`.
 - Confirm the project description says UiPath is the orchestration/governance layer.
 - Confirm README states coded-agent and low-code UiPath workflow intent.
 
@@ -36,4 +36,4 @@ Use this checklist on the Devpost draft for `Enterprise AI Orchestrator for UiPa
 - Confirm no private email, token, credential, tenant secret, or unsupported live-platform claim appears.
 - Review Official Rules and Devpost Terms.
 - Check the terms checkbox only after review.
-- Click `Submit project` only after Labs URL and demo video URL are present.
+- Click `Submit project` only after Labs URL, demo video URL, participation type, and terms are ready.

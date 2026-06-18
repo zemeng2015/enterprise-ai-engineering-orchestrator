@@ -8,6 +8,7 @@ Use this when finishing the UiPath AgentHack Devpost submission.
 - Public demo: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
 - Public repository: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 - Deck: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/raw/main/docs/uipath-agenthack-presentation.pptx
+- Demo video: https://youtu.be/8AKMY8VoN7c
 
 ## Before Finalizing
 
@@ -28,7 +29,7 @@ https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 
 3. Confirm the deck field points to the public raw PPTX link.
 4. Add the UiPath Labs environment URL after the access email arrives.
-5. Add the uploaded demo video URL.
+5. Confirm the demo video URL is still `https://youtu.be/8AKMY8VoN7c`.
 6. If submitting solo, set the participation field to `Individual` rather than `Team`.
 7. Follow `docs/DEVPOST_FIELD_FIXES.md` for the field-by-field final pass.
 8. Preview the public project page and confirm there is no private email, token, credential, or unsupported claim.
@@ -63,5 +64,5 @@ Only click `Submit project` after all required fields are filled and the final p
 ## Known Current Blockers
 
 - UiPath Labs environment URL is still required.
-- Demo video URL is still required.
 - The participation field currently needs a solo/team sanity check.
+- Official Rules and Devpost Terms still need final review before checking the box.

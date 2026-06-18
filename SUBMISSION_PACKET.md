@@ -128,7 +128,8 @@ The main challenge is designing an agent workflow that feels enterprise-trustwor
 
 - UiPath AgentHack Devpost draft exists and is currently 3/5 steps complete.
 - UiPath Labs access request has been submitted; final Devpost completion is blocked on the required UiPath Labs environment URL.
-- Demo video is still needed before final submission.
+- Demo video is hosted and filled on Devpost: https://youtu.be/8AKMY8VoN7c
+- Devpost participation type still needs a final solo/team sanity check.
 - Finalization step on Devpost is still pending.
 - Mind the Product final submission should wait for Novus.ai installation on the live deployed project and a Novus dashboard screenshot.
 - Mind the Product also requires a 2-3 minute demo video hosted on YouTube, Vimeo, or Loom.
