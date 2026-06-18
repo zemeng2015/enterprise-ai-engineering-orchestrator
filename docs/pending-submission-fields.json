@@ -1,0 +1,33 @@
+{
+  "shared": {
+    "project": "Enterprise AI Engineering Orchestrator",
+    "repository": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator",
+    "liveDemo": "https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/",
+    "demoVideo": "https://youtu.be/8AKMY8VoN7c",
+    "stableRelease": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/releases/tag/v2026-june-submission",
+    "proofIndex": "https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/submission-proof-index.json"
+  },
+  "casperDoraHacks": {
+    "status": "profile-details-team-filled-contact-blocked",
+    "missingUserFields": ["telegramUsername", "backupContact"],
+    "proofBlock": "Verified Casper Testnet transaction: https://testnet.cspr.live/transaction/6b2bad1bfd8fb5bd57d344310a0876c05ff454513df793b43f5b87e6e3f8af84"
+  },
+  "anna": {
+    "title": "Release Risk Review: Human-Governed Enterprise AI Workflow for Anna",
+    "shortDescription": "Release Risk Review turns an enterprise release candidate into a structured AI-native workflow: inspect release context, call a release-risk tool, generate targeted test actions, save review state, and stop at a human approval checkpoint.",
+    "judgePacket": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/anna-app/release-risk-review/SUBMISSION.md",
+    "standaloneZip": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/releases/download/v2026-june-submission/release-risk-review-anna-app.zip",
+    "verificationCommand": "npm run anna:proof",
+    "boundary": "Runnable hackathon prototype package; not a published Anna App Store listing; safe simulated release context only."
+  },
+  "bandOfAgents": {
+    "title": "Enterprise Multi-Agent Release Governance Orchestrator",
+    "tagline": "Band-ready release governance where planner, risk, QA, and human-review agents coordinate through visible handoffs.",
+    "shortDescription": "Enterprise Multi-Agent Release Governance Orchestrator turns release readiness into a coordinated agent workflow. A planner agent opens the release room, a risk-evidence agent publishes structured release facts, a QA-test agent creates targeted validation work, and a human-review agent holds high-risk releases until evidence is approved.",
+    "readinessDoc": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/band-of-agents-readiness.md",
+    "scaffold": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/tree/main/band-agents/release-governance",
+    "proofArtifact": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/outputs/band-agent-collaboration-proof.json",
+    "verificationCommand": "npm run band:proof",
+    "boundary": "Local Band-ready proof; does not claim live Band API transcript until account/API access is available."
+  }
+}
