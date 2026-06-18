@@ -7,13 +7,14 @@ const manifestPath = join(appRoot, "manifest.json");
 const uiEntryPath = join(appRoot, "ui/index.html");
 const toolPath = join(appRoot, "executas/release-risk-review/tool.mjs");
 const skillPath = join(appRoot, "skills/release-risk-review/SKILL.md");
+const submissionPath = join(appRoot, "SUBMISSION.md");
 
 function fail(message) {
   console.error(`Anna proof failed: ${message}`);
   process.exit(1);
 }
 
-for (const file of [manifestPath, uiEntryPath, toolPath, skillPath]) {
+for (const file of [manifestPath, uiEntryPath, toolPath, skillPath, submissionPath]) {
   if (!existsSync(file)) {
     fail(`missing ${file}`);
   }
@@ -44,6 +45,18 @@ const ui = readFileSync(uiEntryPath, "utf8");
 for (const snippet of ["Release Risk Review", "Needs human review", "assess_release_risk"]) {
   if (!ui.includes(snippet)) {
     fail(`UI bundle is missing ${snippet}`);
+  }
+}
+
+const submission = readFileSync(submissionPath, "utf8");
+for (const snippet of [
+  "Judge Quickstart",
+  "npm run anna:proof",
+  "human approval checkpoint",
+  "release-risk-review-anna-app.zip",
+]) {
+  if (!submission.includes(snippet)) {
+    fail(`submission packet is missing ${snippet}`);
   }
 }
 

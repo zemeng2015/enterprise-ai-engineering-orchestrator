@@ -45,9 +45,9 @@ const proofLinks = [
     finalUrlIncludes: "6b2bad1bfd8fb5bd57d344310a0876c05ff454513df793b43f5b87e6e3f8af84",
   },
   {
-    label: "Anna App prototype readiness",
-    url: "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/anna-ai-native-readiness.md",
-    requiredText: "npm run anna:proof",
+    label: "Anna App judge submission packet",
+    url: "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/anna-app/release-risk-review/SUBMISSION.md",
+    requiredText: "Judge Quickstart",
   },
 ];
 
@@ -80,7 +80,7 @@ if (proofIndex.project !== "Enterprise AI Engineering Orchestrator") {
   fail("hosted proof index JSON has an unexpected project name");
 }
 
-if (proofIndex.proofIndexVersion !== "2026-06-19.3") {
+if (proofIndex.proofIndexVersion !== "2026-06-19.4") {
   fail(`hosted proof index JSON has an unexpected version: ${proofIndex.proofIndexVersion}`);
 }
 

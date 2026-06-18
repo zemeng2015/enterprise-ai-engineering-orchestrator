@@ -22,6 +22,7 @@ Anna hackathon materials say a submission can be a shareable Anna App, runnable 
 - UI bundle entry: `anna-app/release-risk-review/ui/index.html`
 - Executa-style local tool: `anna-app/release-risk-review/executas/release-risk-review/tool.mjs`
 - Skill card: `anna-app/release-risk-review/skills/release-risk-review/SKILL.md`
+- One-page judge packet: `anna-app/release-risk-review/SUBMISSION.md`
 - Local proof command: `npm run anna:proof`
 - Package command: `npm run anna:package`
 - Stable package asset: `https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/releases/download/v2026-june-submission/release-risk-review-anna-app.zip`
@@ -88,4 +89,10 @@ Boundary:
 
 ```text
 This is a runnable hackathon prototype package, not a published Anna App Store listing. It uses safe simulated release context and does not call live customer systems or mutate repositories.
+```
+
+Judge quickstart:
+
+```text
+The package includes anna-app/release-risk-review/SUBMISSION.md with the public demo, repository, stable release zip, exact local verification commands, and the Anna judging-fit mapping.
 ```

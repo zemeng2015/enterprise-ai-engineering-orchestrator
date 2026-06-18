@@ -19,6 +19,7 @@ function fail(message) {
 
 for (const file of [
   `${appRoot}/README.md`,
+  `${appRoot}/SUBMISSION.md`,
   `${appRoot}/manifest.json`,
   `${appRoot}/ui/index.html`,
   `${appRoot}/executas/release-risk-review/tool.mjs`,

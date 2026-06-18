@@ -3,7 +3,7 @@
   "liveDemo": "https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/",
   "repository": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator",
   "release": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/releases/tag/v2026-june-submission",
-  "proofIndexVersion": "2026-06-19.3",
+  "proofIndexVersion": "2026-06-19.4",
   "proofs": [
     {
       "track": "UiPath AgentHack",
@@ -37,9 +37,9 @@
     },
     {
       "track": "Anna AI-Native App Hackathon",
-      "label": "Anna App prototype package",
-      "url": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/anna-ai-native-readiness.md",
-      "verifies": "Runnable Anna App prototype package with schema-2 manifest, UI bundle, local Executa tool, Skill card, and local proof command."
+      "label": "Anna App judge submission packet",
+      "url": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/anna-app/release-risk-review/SUBMISSION.md",
+      "verifies": "Runnable Anna App prototype package with judge quickstart, schema-2 manifest, UI bundle, local Executa tool, Skill card, and local proof command."
     }
   ]
 }

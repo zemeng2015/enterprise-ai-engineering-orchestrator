@@ -22,7 +22,16 @@ npm run anna:proof
 
 The proof script checks the manifest, verifies the UI entry file, starts the local tool, calls `describe`, calls `assess_release_risk`, and validates the human-review output.
 
+## Judge Quickstart
+
+The one-page submission packet is in `SUBMISSION.md`. It includes the public demo, repository, stable release zip, exact verification commands, and the Anna judging-fit summary.
+
+Generate the standalone zip from the repository root:
+
+```bash
+npm run anna:package
+```
+
 ## Submission Boundary
 
 This is a runnable Anna App prototype package, not a published Anna App Store listing. It is suitable for the hackathon submission path that accepts a runnable project, zip, private repo, public repo, or local run instructions.
-
