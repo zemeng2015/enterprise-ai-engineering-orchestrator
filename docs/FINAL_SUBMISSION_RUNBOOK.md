@@ -31,8 +31,10 @@ https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 4. Add the UiPath Labs environment URL after the access email arrives.
 5. Confirm the demo video URL is still `https://youtu.be/8AKMY8VoN7c`.
 6. If submitting solo, set the participation field to `Individual` rather than `Team`.
-7. Follow `docs/DEVPOST_FIELD_FIXES.md` for the field-by-field final pass.
-8. Preview the public project page and confirm there is no private email, token, credential, or unsupported claim.
+7. Replace the duplicated Project Story headings with the clean final story from `DEVPOST_DRAFTS.md`.
+8. Follow `docs/DEVPOST_FIELD_FIXES.md` for the field-by-field final pass.
+9. Preview the public project page and confirm there is no private email, token, credential, or unsupported claim.
+10. Update local `submission.readiness.local.json` flags only after the matching Devpost field has actually been saved and checked.
 
 ## Demo Video Requirements
 
@@ -65,4 +67,5 @@ Only click `Submit project` after all required fields are filled and the final p
 
 - UiPath Labs environment URL is still required.
 - The participation field currently needs a solo/team sanity check.
+- The Project Story currently needs cleanup because duplicated empty Markdown headings are visible.
 - Official Rules and Devpost Terms still need final review before checking the box.

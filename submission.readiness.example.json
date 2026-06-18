@@ -3,6 +3,10 @@
   "demoVideoUrl": "https://replace-with-youtube-vimeo-or-loom-url",
   "participationType": "Individual",
   "devpostProjectUrl": "https://devpost.com/software/enterprise-ai-orchestrator-for-uipath",
+  "devpostLabsUrlSaved": false,
+  "devpostProjectStoryCleaned": false,
+  "devpostParticipationFieldSaved": false,
+  "devpostFinalPreviewChecked": false,
   "officialRulesReadyToAccept": false,
   "notes": "Copy this file to submission.readiness.local.json and fill final URLs locally. Do not commit the local file."
 }

@@ -42,6 +42,7 @@ if (!existsSync(localPath)) {
     "UiPath Labs environment URL is still needed.",
     "Demo video URL is still needed.",
     "Participation type must be confirmed as Individual or Team.",
+    "Devpost final fields must be saved and preview-checked.",
   ]);
 }
 
@@ -72,6 +73,22 @@ if (config.participationType !== "Individual") {
 
 if (!isHttpsUrl(config.devpostProjectUrl || "")) {
   errors.push("devpostProjectUrl must be the public Devpost project preview URL.");
+}
+
+if (config.devpostLabsUrlSaved !== true) {
+  errors.push("devpostLabsUrlSaved must be true after the real Labs URL is saved in Devpost Additional info.");
+}
+
+if (config.devpostProjectStoryCleaned !== true) {
+  errors.push("devpostProjectStoryCleaned must be true after replacing the duplicated Story headings in Devpost Project details.");
+}
+
+if (config.participationType === "Individual" && config.devpostParticipationFieldSaved !== true) {
+  errors.push("devpostParticipationFieldSaved must be true after Devpost participation is saved as Individual.");
+}
+
+if (config.devpostFinalPreviewChecked !== true) {
+  errors.push("devpostFinalPreviewChecked must be true after previewing the public project page.");
 }
 
 if (config.officialRulesReadyToAccept !== true) {

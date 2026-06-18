@@ -21,10 +21,19 @@ Current blocker:
 
 - Waiting for UiPath Labs environment URL. Devpost requires this URL in Additional info before finalization.
 
+Current Devpost draft issues observed:
+
+- Additional Info still has an empty UiPath Labs environment URL.
+- Participation is currently saved as `Team`; change to `Individual` if Zack is submitting solo.
+- Project Story currently shows duplicated empty Markdown headings before the real story.
+- Official Rules and Devpost Terms are not yet accepted.
+- Final `Submit project` has not been clicked.
+
 Remaining work:
 
 - Add UiPath Labs URL to Devpost when received.
 - Confirm whether the Devpost participation field should be `Individual` or `Team`.
+- Replace the duplicated Project Story with the clean final story from `DEVPOST_DRAFTS.md`.
 - Follow `docs/FINAL_SUBMISSION_RUNBOOK.md` for final field checks.
 - Fill the real Labs URL in `submission.readiness.local.json` and run `npm run final-readiness`.
 - Complete Devpost finalization.
