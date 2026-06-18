@@ -16,6 +16,7 @@ Run the local checks:
 ```bash
 npm run preflight
 npm run submission-audit
+npm run final-readiness
 ```
 
 1. Confirm the Devpost project is still on `Track 3: UiPath Test Cloud`.
@@ -29,7 +30,8 @@ https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 4. Add the UiPath Labs environment URL after the access email arrives.
 5. Add the uploaded demo video URL.
 6. If submitting solo, set the participation field to `Individual` rather than `Team`.
-7. Preview the public project page and confirm there is no private email, token, credential, or unsupported claim.
+7. Follow `docs/DEVPOST_FIELD_FIXES.md` for the field-by-field final pass.
+8. Preview the public project page and confirm there is no private email, token, credential, or unsupported claim.
 
 ## Demo Video Requirements
 

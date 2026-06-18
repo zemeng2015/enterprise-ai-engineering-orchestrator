@@ -27,6 +27,7 @@ const requiredFiles = [
   "STATUS.md",
   "docs/FINAL_SUBMISSION_RUNBOOK.md",
   "docs/DEMO_TELEPROMPTER.md",
+  "docs/DEVPOST_FIELD_FIXES.md",
   "docs/VIDEO_RECORDING_PACKAGE.md",
   "docs/uipath-agenthack-presentation.pptx",
   "docs/screenshots/orchestrator-desktop.png",
@@ -36,6 +37,8 @@ const requiredFiles = [
   "docs/video-frames/03-after-generate-tests.png",
   "docs/video-frames/04-after-approval.png",
   "docs/video-frames/05-public-github-repo.png",
+  "scripts/final-readiness.mjs",
+  "submission.readiness.example.json",
 ];
 
 const requiredReadmeTerms = [

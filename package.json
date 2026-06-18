@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "preflight": "node scripts/preflight.mjs",
-    "submission-audit": "node scripts/submission-audit.mjs"
+    "submission-audit": "node scripts/submission-audit.mjs",
+    "final-readiness": "node scripts/final-readiness.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.561.0",

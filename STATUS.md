@@ -25,6 +25,7 @@ Remaining work:
 - Add UiPath Labs URL to Devpost when received.
 - Record and upload the demo video.
 - Follow `docs/FINAL_SUBMISSION_RUNBOOK.md` for final field checks.
+- Fill `submission.readiness.local.json` locally and run `npm run final-readiness` when Labs/video URLs are available.
 - Complete Devpost finalization.
 - Optionally update README/screenshots after real UiPath Labs access is connected.
 
@@ -40,6 +41,7 @@ Use `enterprise-ai-engineering-orchestrator` as the primary Devpost submission r
 ## Submission Prep Artifacts
 
 - Final runbook: `docs/FINAL_SUBMISSION_RUNBOOK.md`
+- Devpost field fixes: `docs/DEVPOST_FIELD_FIXES.md`
 - Demo script: `DEMO_SCRIPT.md`
 - Teleprompter script: `docs/DEMO_TELEPROMPTER.md`
 - Video recording package: `docs/VIDEO_RECORDING_PACKAGE.md`
