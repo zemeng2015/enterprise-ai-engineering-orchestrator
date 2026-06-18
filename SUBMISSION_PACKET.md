@@ -48,9 +48,10 @@ Position as:
 
 GitLab components to describe:
 
-- GitLab Context as the repo/MR signal source.
+- GitLab Orbit-style context as the repo/MR signal source.
 - GitLab CI-style test and failure signals.
 - Agent workflow that performs a concrete action: identifies missing tests and updates the work queue.
+- Project-level GitLab Duo Agent Skill at `skills/release-risk-orbit/SKILL.md`.
 
 Demo emphasis:
 
@@ -58,6 +59,7 @@ Demo emphasis:
 2. Show `GitLab Context` in Repo Context and workflow.
 3. Click `Generate Tests`.
 4. Explain how a real integration would use merge request diffs, CI status, and generated test patches.
+5. Show the GitLab Duo skill artifact and explain its Orbit query workflow.
 
 ## Mind the Product Positioning
 
@@ -119,6 +121,7 @@ The main challenge is designing an agent workflow that feels enterprise-trustwor
 
 ### What is next
 
+- Run the GitLab Duo skill against live GitLab Orbit if access is available.
 - Connect GitLab merge request and CI context.
 - Connect UiPath Test Cloud execution and Automation Cloud approval routing.
 - Generate real test patches and evidence bundles.
@@ -133,4 +136,4 @@ The main challenge is designing an agent workflow that feels enterprise-trustwor
 - Finalization step on Devpost is still pending.
 - Mind the Product final submission should wait for Novus.ai installation on the live deployed project and a Novus dashboard screenshot.
 - Mind the Product also requires a 2-3 minute demo video hosted on YouTube, Vimeo, or Loom.
-- GitLab Transcend project draft creation is blocked by a visible reCAPTCHA challenge on Devpost.
+- GitLab Transcend is submitted. Remaining GitLab-specific risk is theme fit: the public dashboard uses simulated GitLab context, while the Showcase Track expects meaningful GitLab Orbit usage. The repository now includes a project-level GitLab Duo skill artifact to make the Orbit workflow explicit.

@@ -48,6 +48,6 @@ Demo: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
 ## External Actions Still Open
 
 - Novus.ai setup for Mind the Product requires GitHub authorization to let Novus/Pendo read this repository and create an installation pull request.
-- Demo video still needs to be recorded and uploaded to YouTube, Vimeo, or Loom as public/unlisted.
-- GitLab Devpost project creation is currently blocked by an interactive reCAPTCHA challenge.
-- UiPath Labs access form needs the email address and city that should be submitted for the sandbox request.
+- Demo video is uploaded as an unlisted YouTube video: https://youtu.be/8AKMY8VoN7c
+- GitLab Devpost project is submitted and publicly visible. The remaining GitLab action is to ensure the YouTube video field is saved on the GitLab Devpost project and, if possible, add live GitLab Orbit evidence.
+- UiPath Labs access request has been submitted; sandbox URL and credentials are pending.

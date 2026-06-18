@@ -11,7 +11,7 @@ This is a local React/Vite demo of an engineering workflow orchestration product
 The same demo can be described differently per submission:
 
 - **UiPath AgentHack:** Agentic QA orchestration for regulated enterprise releases, with UiPath Automation / Test Cloud as the governance and human-approval layer.
-- **GitLab Transcend:** Repository-aware developer workflow automation using GitLab context, CI signals, and generated tests.
+- **GitLab Transcend:** Repository-aware developer workflow automation using GitLab Orbit-style context, CI signals, generated tests, and a project-level GitLab Duo Agent Skill.
 - **Mind the Product:** A shippable AI workflow product that lets product-minded builders validate a concrete operational pain point quickly.
 
 ## What Works
@@ -28,8 +28,29 @@ The same demo can be described differently per submission:
 - [5-minute demo script](./DEMO_SCRIPT.md)
 - [Devpost draft copy](./DEVPOST_DRAFTS.md)
 - [Deployment prep](./DEPLOYMENT.md)
+- [GitLab Transcend readiness](./docs/gitlab-transcend-readiness.md)
 - [UiPath AgentHack presentation deck](./docs/uipath-agenthack-presentation.pptx)
 - [Devpost thumbnail asset](./docs/screenshots/devpost-thumbnail.png)
+
+## GitLab Transcend Readiness
+
+This repository is the public code artifact for the GitLab Transcend Showcase Track submission.
+
+### Project Description
+
+Enterprise AI Engineering Orchestrator demonstrates a repository-aware release workflow: inspect change context, estimate release risk, recommend targeted tests, collect evidence, and keep a human approval checkpoint visible before release promotion.
+
+### GitLab Duo / Orbit Artifact
+
+The GitLab-specific AI-native artifact is a project-level GitLab Duo Agent Skill:
+
+- [`skills/release-risk-orbit/SKILL.md`](./skills/release-risk-orbit/SKILL.md)
+
+The skill describes how an agent should use GitLab Orbit context from merge requests, CI, ownership, dependency, and deployment signals to produce release-risk recommendations and approval evidence.
+
+### Current Integration Boundary
+
+The live web demo uses safe simulated GitLab context. It does not call live GitLab Orbit, mutate merge requests, create branches, update CI settings, or write comments. If GitLab Orbit access is available, the intended next step is to run the skill with real Orbit query output and attach that evidence to the submission.
 
 ## UiPath AgentHack Readiness
 

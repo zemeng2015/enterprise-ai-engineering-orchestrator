@@ -106,7 +106,7 @@ The app demonstrates a concrete developer workflow: take repository context, ass
 
 ### GitLab angle
 
-The GitLab positioning emphasizes `GitLab Context` as the source of merge request, code ownership, and CI signals. The Codex Test Agent uses those signals to propose targeted tests and release gates. In a live version, this would connect to GitLab merge requests, CI pipeline status, generated test patches, and review comments.
+The GitLab positioning emphasizes GitLab Orbit-style context as the source of merge request, code ownership, CI, dependency, and deployment signals. The repo now includes a project-level GitLab Duo Agent Skill at `skills/release-risk-orbit/SKILL.md`; the skill defines the reusable workflow for turning Orbit context into targeted tests, release gates, and approval evidence. The live dashboard currently demonstrates the same workflow with simulated GitLab context.
 
 ### Built with
 
@@ -118,10 +118,11 @@ React, TypeScript, Vite, Lucide React, local simulated workflow state.
 2. Show the Repo Context panel and Agent Workflow timeline.
 3. Click `Generate Tests`.
 4. Explain the mapped path from GitLab MR diff to generated tests and approval evidence.
+5. Point judges to `skills/release-risk-orbit/SKILL.md` as the GitLab Duo skill artifact.
 
 ### Safety note
 
-The MVP uses local simulated state and does not mutate GitLab repositories, branches, issues, merge requests, or CI settings.
+The MVP uses local simulated state and does not mutate GitLab repositories, branches, issues, merge requests, or CI settings. If live GitLab Orbit access is unavailable, the submission should stay explicit that the dashboard is simulated and the reusable GitLab artifact is the project-level skill.
 
 ## Mind the Product: Everyone Ships Now
 
@@ -185,6 +186,7 @@ The main challenge was avoiding a generic chatbot demo. The useful product surfa
 - Add the UiPath Labs environment URL after access is provisioned.
 - Confirm whether the Devpost participation field should be `Individual` or `Team`.
 - Complete Devpost finalization.
+- Run the GitLab Duo skill against live GitLab Orbit context if access is available.
 - Connect GitLab MR and CI context.
 - Connect UiPath Automation Cloud and Test Cloud.
 - Add product analytics instrumentation for Mind the Product.
