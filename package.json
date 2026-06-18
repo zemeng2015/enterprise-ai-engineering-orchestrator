@@ -12,7 +12,8 @@
     "submission-audit": "node scripts/submission-audit.mjs",
     "verify:proofs": "node scripts/verify-public-proofs.mjs",
     "final-readiness": "node scripts/final-readiness.mjs",
-    "casper:proof": "node scripts/casper-audit-proof.mjs"
+    "casper:proof": "node scripts/casper-audit-proof.mjs",
+    "anna:proof": "node scripts/anna-app-proof.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.561.0",

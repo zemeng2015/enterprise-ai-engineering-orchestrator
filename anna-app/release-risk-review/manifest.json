@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "required_executas": [],
+  "optional_executas": [],
+  "permissions": [
+    "chat.append_artifact",
+    "storage.read",
+    "storage.write"
+  ],
+  "system_prompt_addendum": "You are Release Risk Review, an Anna App for enterprise engineering teams. When mentioned, help the user inspect a release candidate, call the release-risk review tool when available, summarize changed areas, identify missing tests, preserve a human approval checkpoint, and attach an evidence packet instead of auto-approving a risky release.",
+  "user_message_prefix_template": "[Release Risk Review] {user_message}",
+  "tags": [
+    "developer-tools",
+    "automation",
+    "human-review",
+    "enterprise-ai"
+  ],
+  "ui": {
+    "bundle": {
+      "format": "static-spa",
+      "entry": "ui/index.html",
+      "external_origins": []
+    },
+    "views": [
+      {
+        "name": "main",
+        "title": "Release Risk Review",
+        "default": true,
+        "entry": "ui/index.html",
+        "min_size": {
+          "w": 520,
+          "h": 420
+        },
+        "default_size": {
+          "w": 980,
+          "h": 680
+        },
+        "max_size": {
+          "w": 1920,
+          "h": 1200
+        },
+        "resizable": true,
+        "movable": true,
+        "single_instance": true,
+        "summary_template": "Release risk review for {release_id}"
+      }
+    ],
+    "host_api": {
+      "chat": [
+        "append_artifact"
+      ],
+      "storage": [
+        "get",
+        "set"
+      ],
+      "window": [
+        "set_title",
+        "close"
+      ]
+    }
+  },
+  "dev": {
+    "fixtures": [
+      "fixtures/release-risk-review.jsonl"
+    ],
+    "seed_storage": {
+      "release_id": "checkout-2026.06.17",
+      "approval_state": "needs-human-review"
+    }
+  }
+}

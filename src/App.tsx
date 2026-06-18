@@ -25,7 +25,7 @@ const nav = [
   { label: "Evidence", icon: ClipboardCheck },
 ];
 
-const modes: HackathonMode[] = ["uipath", "gitlab", "product", "casper"];
+const modes: HackathonMode[] = ["uipath", "gitlab", "product", "casper", "anna"];
 
 function App() {
   const [mode, setMode] = useState<HackathonMode>("uipath");
@@ -48,6 +48,14 @@ function App() {
         title: "Tests generated",
         body: "Three new test drafts are ready. Review the evidence before release approval.",
         action: "Approve Release",
+      };
+    }
+
+    if (mode === "anna") {
+      return {
+        title: "Anna review packet ready",
+        body: "Tool output, saved workflow state, and the human approval checkpoint are packaged as an Anna App prototype.",
+        action: "Accept Review",
       };
     }
 

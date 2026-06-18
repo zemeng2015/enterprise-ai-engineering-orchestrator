@@ -204,6 +204,41 @@ React, TypeScript, Vite, Node.js crypto, Casper Testnet proof workflow.
 
 The current repo prepares the audit payload and proof hash, and now includes a real Casper Testnet transaction proof. A stronger optional enhancement would be a custom Casper deploy or contract interaction that directly carries the audit hash.
 
+## Anna AI-Native App Hackathon
+
+### Title
+
+Release Risk Review: Human-Governed Enterprise AI Workflow for Anna
+
+### Tagline
+
+An Anna App prototype for release-risk tool calls, saved review state, and human approval.
+
+### Short description
+
+Release Risk Review turns an enterprise release candidate into a structured AI-native workflow: inspect release context, call a release-risk tool, generate targeted test actions, save review state, and stop at a human approval checkpoint.
+
+### What it does
+
+The app focuses on one workflow. A release manager or QA owner opens the review, sees the release risk score, asks the tool layer for evidence, reviews the generated test recommendations, and keeps the final promotion decision behind a human checkpoint.
+
+### How it uses Anna
+
+The repository includes a schema-2 Anna App manifest, static UI bundle, local Executa-style JSON-RPC tool, and Skill card under `anna-app/release-risk-review/`. This mirrors Anna's app model: UI, tools, state, permissions, and assistant behavior bundled around a focused workflow.
+
+### What to submit
+
+- Repository: `https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator`
+- Live demo: `https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/`
+- Anna package path: `anna-app/release-risk-review/`
+- Readiness doc: `docs/anna-ai-native-readiness.md`
+- Local proof command: `npm run anna:proof`
+- Demo video: `https://youtu.be/8AKMY8VoN7c`
+
+### Boundary
+
+This is a runnable hackathon prototype package, not a published Anna App Store listing. It uses safe simulated release context and does not call live customer systems or mutate repositories.
+
 ## Shared Answers
 
 ### Inspiration

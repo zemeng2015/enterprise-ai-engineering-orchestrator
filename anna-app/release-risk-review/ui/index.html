@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Release Risk Review</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        --ink: #172026;
+        --muted: #66747e;
+        --line: #dce4e8;
+        --red: #c2413c;
+        --amber: #b7791f;
+        --green: #16835b;
+        --surface: #ffffff;
+        --soft: #f3f7f8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        background: #f7f9fb;
+        color: var(--ink);
+      }
+
+      main {
+        display: grid;
+        gap: 14px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 18px;
+      }
+
+      header,
+      section {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 18px;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 24px;
+        line-height: 1.15;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      p {
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        height: 28px;
+        padding: 0 10px;
+        border-radius: 999px;
+        background: #fff4dd;
+        color: var(--amber);
+        font-size: 12px;
+        font-weight: 750;
+        white-space: nowrap;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.7fr);
+        gap: 14px;
+      }
+
+      section {
+        padding: 16px;
+      }
+
+      .risk {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 18px;
+        align-items: center;
+      }
+
+      .meter {
+        display: grid;
+        width: 120px;
+        height: 120px;
+        place-items: center;
+        border-radius: 50%;
+        background:
+          radial-gradient(circle at center, white 0 57%, transparent 58%),
+          conic-gradient(var(--red) 0 71%, #e9eff2 0 100%);
+      }
+
+      .meter strong {
+        font-size: 34px;
+      }
+
+      .steps,
+      .tests {
+        display: grid;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .row {
+        display: grid;
+        gap: 4px;
+        padding: 10px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--soft);
+      }
+
+      .row strong {
+        font-size: 13px;
+      }
+
+      .row span {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .decision {
+        border-color: #b8ddcf;
+        background: #eefaf5;
+      }
+
+      .decision strong {
+        color: var(--green);
+      }
+
+      footer {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 760px) {
+        header,
+        .grid,
+        .risk {
+          grid-template-columns: 1fr;
+        }
+
+        header {
+          display: grid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>Release Risk Review</h1>
+          <p>Anna App prototype for enterprise release-risk evidence, generated test actions, saved state, and human approval.</p>
+        </div>
+        <span class="chip">Needs human review</span>
+      </header>
+
+      <div class="grid">
+        <section>
+          <div class="risk">
+            <div class="meter"><strong>71</strong></div>
+            <div>
+              <h2>Checkout release 2026.06.17</h2>
+              <p>Auth callback and release-gate changes increase risk. The app asks the tool layer for evidence, then prepares a review packet instead of approving automatically.</p>
+            </div>
+          </div>
+
+          <div class="steps" aria-label="Workflow steps">
+            <div class="row">
+              <strong>1. Read repository context</strong>
+              <span>12 changed files, 4 owned services, 2 critical routes.</span>
+            </div>
+            <div class="row">
+              <strong>2. Generate test actions</strong>
+              <span>OAuth nonce replay, invoice retry exhaustion, and release-gate contract tests.</span>
+            </div>
+            <div class="row decision">
+              <strong>3. Hold for human approval</strong>
+              <span>Approval state is saved as needs-human-review with an evidence packet attached.</span>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Tool Output Contract</h2>
+          <div class="tests">
+            <div class="row">
+              <strong>assess_release_risk</strong>
+              <span>Returns score, risk drivers, recommended tests, and approval state.</span>
+            </div>
+            <div class="row">
+              <strong>draft_human_review_packet</strong>
+              <span>Builds a concise artifact for QA owner approval in chat.</span>
+            </div>
+            <div class="row">
+              <strong>saved state</strong>
+              <span>release_id, risk_score, test_count, approval_state.</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        Boundary: this static bundle and local Executa tool are a hackathon prototype package. The public repository also includes the full React dashboard and proof hub.
+      </footer>
+    </main>
+  </body>
+</html>

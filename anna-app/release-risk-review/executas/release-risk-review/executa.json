@@ -1,0 +1,6 @@
+{
+  "name": "release-risk-review",
+  "version": "0.1.0",
+  "entry": "tool.mjs",
+  "runtime": "node"
+}

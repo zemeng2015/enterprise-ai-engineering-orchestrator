@@ -1,0 +1,2 @@
+{"jsonrpc":"2.0","id":1,"method":"describe"}
+{"jsonrpc":"2.0","id":2,"method":"call","params":{"name":"assess_release_risk","args":{"release_id":"checkout-2026.06.17"}}}

@@ -1,4 +1,4 @@
-export type HackathonMode = "uipath" | "gitlab" | "product" | "casper";
+export type HackathonMode = "uipath" | "gitlab" | "product" | "casper" | "anna";
 
 export type TestCase = {
   id: string;
@@ -48,6 +48,12 @@ export const positioning = {
     angle: "Verifiable agentic release-audit receipt anchored to Casper Testnet",
     integration: "Casper Testnet",
     primaryCta: "Generate Audit Receipt",
+  },
+  anna: {
+    name: "Anna AI-Native",
+    angle: "AI-native release review app with tool calls, saved state, and human review",
+    integration: "Anna App Prototype",
+    primaryCta: "Open Review Flow",
   },
 } satisfies Record<HackathonMode, { name: string; angle: string; integration: string; primaryCta: string }>;
 
@@ -148,6 +154,12 @@ export const proofLinks: ProofLink[] = [
     target: "Casper Buildathon",
     href: "https://testnet.cspr.live/transaction/6b2bad1bfd8fb5bd57d344310a0876c05ff454513df793b43f5b87e6e3f8af84",
     note: "Verified Testnet transaction paired with the generated audit receipt.",
+  },
+  {
+    label: "Anna App Package",
+    target: "Anna AI-Native App Hackathon",
+    href: "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/tree/main/anna-app/release-risk-review",
+    note: "Runnable Anna App prototype package with schema-2 manifest, UI bundle, local Executa tool, and skill card.",
   },
 ];
 

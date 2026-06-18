@@ -14,10 +14,11 @@ The same demo can be described differently per submission:
 - **GitLab Transcend:** Repository-aware developer workflow automation using GitLab Orbit-style context, CI signals, generated tests, and a project-level GitLab Duo Agent Skill.
 - **Mind the Product:** A shippable AI workflow product that lets product-minded builders validate a concrete operational pain point quickly.
 - **Casper Agentic Buildathon:** Verifiable agentic release-audit receipt prepared for Casper Testnet anchoring.
+- **Anna AI-Native App Hackathon:** Focused Anna App prototype for release-risk tool calls, saved review state, and human approval.
 
 ## What Works
 
-- Switch between UiPath, GitLab, and product-MVP positioning.
+- Switch between UiPath, GitLab, product-MVP, Casper, and Anna positioning.
 - Run a simulated release risk scan.
 - Generate test status changes from local UI state.
 - Approve a release through a human checkpoint.
@@ -33,6 +34,7 @@ The same demo can be described differently per submission:
 - [Deployment prep](./DEPLOYMENT.md)
 - [GitLab Transcend readiness](./docs/gitlab-transcend-readiness.md)
 - [Casper Agentic Buildathon readiness](./docs/casper-agentic-buildathon-readiness.md)
+- [Anna AI-Native App readiness](./docs/anna-ai-native-readiness.md)
 - [UiPath AgentHack presentation deck](./docs/uipath-agenthack-presentation.pptx)
 - [UiPath Test Manager passed execution proof](./docs/uipath-test-manager-execution-passed.png)
 - [Devpost thumbnail asset](./docs/screenshots/devpost-thumbnail.png)
@@ -128,6 +130,23 @@ The script writes:
 - `outputs/casper-audit-proof.json`
 
 Current boundary: the payload hash is generated and paired with a verified Casper Testnet transfer proof. This is a truthful transfer/audit receipt workflow, not a custom smart-contract deployment. See [Casper readiness](./docs/casper-agentic-buildathon-readiness.md).
+
+## Anna AI-Native App Hackathon Readiness
+
+This repository includes a focused Anna App prototype package:
+
+- [`anna-app/release-risk-review/manifest.json`](./anna-app/release-risk-review/manifest.json)
+- [`anna-app/release-risk-review/ui/index.html`](./anna-app/release-risk-review/ui/index.html)
+- [`anna-app/release-risk-review/executas/release-risk-review/tool.mjs`](./anna-app/release-risk-review/executas/release-risk-review/tool.mjs)
+- [`anna-app/release-risk-review/skills/release-risk-review/SKILL.md`](./anna-app/release-risk-review/skills/release-risk-review/SKILL.md)
+
+Run the Anna proof:
+
+```bash
+npm run anna:proof
+```
+
+Current boundary: the Anna package is a runnable hackathon artifact and local proof, not a published Anna App Store listing. See [Anna readiness](./docs/anna-ai-native-readiness.md).
 
 ## Public Demo
 

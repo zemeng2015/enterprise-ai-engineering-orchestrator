@@ -12,9 +12,14 @@ const requiredFiles = [
   ".github/workflows/pages.yml",
   "docs/screenshots/orchestrator-desktop.png",
   "docs/screenshots/orchestrator-mobile.png",
+  "docs/anna-ai-native-readiness.md",
+  "anna-app/release-risk-review/manifest.json",
+  "anna-app/release-risk-review/ui/index.html",
+  "anna-app/release-risk-review/executas/release-risk-review/tool.mjs",
 ];
 
 const commands = [
+  ["npm", ["run", "anna:proof"]],
   ["npm", ["run", "typecheck"]],
   ["npm", ["run", "build"]],
   ["npm", ["audit", "--audit-level=high"]],
