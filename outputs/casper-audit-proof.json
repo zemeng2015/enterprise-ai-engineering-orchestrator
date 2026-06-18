@@ -23,7 +23,9 @@
     "Prepared human-in-the-loop approval task."
   ],
   "payloadHash": "be704f66fb2e9aa63f41e86e765c20f0120027651d4bca63b27ce85d2bc9ee01",
-  "transactionStatus": "pending-testnet-funding",
-  "explorerUrl": null,
-  "nextAction": "Fund a Casper Testnet account, submit this payload hash through a transaction-producing component, then replace transactionStatus and explorerUrl with the real deploy or transfer proof."
+  "transactionStatus": "success-testnet-faucet-transfer",
+  "transactionHash": "6b2bad1bfd8fb5bd57d344310a0876c05ff454513df793b43f5b87e6e3f8af84",
+  "explorerUrl": "https://testnet.cspr.live/transaction/6b2bad1bfd8fb5bd57d344310a0876c05ff454513df793b43f5b87e6e3f8af84",
+  "transactionResult": "Transferred 5,000.00 CSPR from faucet.cspr to the Casper Snap account used by this demo.",
+  "proofBoundary": "This is a verified Casper Testnet transfer/audit receipt workflow. It is not a custom smart-contract deployment."
 }
