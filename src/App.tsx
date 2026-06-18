@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { CSSProperties } from "react";
+import type { ChangeEvent, CSSProperties } from "react";
 import {
   Activity,
   AlertTriangle,
@@ -59,7 +59,66 @@ function App() {
 
   const runScan = () => {
     setScanState("running");
-    window.setTimeout(() => setScanState("generated"), 650);
+    window.setTimeout(() => {
+      setScanState("generated");
+
+      window.pendo?.track("risk_scan_completed", {
+        positioning_mode: mode,
+        risk_score: 64,
+        high_risk_count: highRiskCount,
+        changed_files_count: 12,
+        test_drafts_count: 3,
+        release_name: "Checkout release 2026.06.17",
+      });
+
+      window.pendo?.track("tests_generated", {
+        generation_method: "risk_scan",
+        total_test_count: tests.length,
+        high_risk_test_count: tests.filter((t) => t.risk === "high").length,
+        medium_risk_test_count: tests.filter((t) => t.risk === "medium").length,
+        low_risk_test_count: tests.filter((t) => t.risk === "low").length,
+        tests_needing_review_count: tests.filter((t) => t.status === "Needs Review").length,
+        positioning_mode: mode,
+      });
+    }, 650);
+  };
+
+  const handleGenerateTests = () => {
+    setScanState("generated");
+    window.pendo?.track("tests_generated", {
+      generation_method: "manual",
+      total_test_count: tests.length,
+      high_risk_test_count: tests.filter((t) => t.risk === "high").length,
+      medium_risk_test_count: tests.filter((t) => t.risk === "medium").length,
+      low_risk_test_count: tests.filter((t) => t.risk === "low").length,
+      tests_needing_review_count: tests.filter((t) => t.status === "Needs Review").length,
+      positioning_mode: mode,
+    });
+  };
+
+  const handleApproveRelease = () => {
+    window.pendo?.track("release_approved", {
+      risk_score_at_approval: progress,
+      high_risk_areas_count: highRiskCount,
+      tests_were_generated: scanState === "generated",
+      scan_state_before_approval: scanState,
+      positioning_mode: mode,
+      release_name: "Checkout release 2026.06.17",
+      evidence_log_count: evidenceLog.length,
+    });
+    setScanState("approved");
+  };
+
+  const handleModeChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const newMode = event.target.value as HackathonMode;
+    window.pendo?.track("positioning_mode_changed", {
+      previous_mode: mode,
+      new_mode: newMode,
+      new_mode_name: positioning[newMode].name,
+      new_mode_integration: positioning[newMode].integration,
+      new_mode_primary_cta: positioning[newMode].primaryCta,
+    });
+    setMode(newMode);
   };
 
   return (
@@ -97,7 +156,7 @@ function App() {
           <div className="topbar-actions">
             <label className="mode-select">
               <span>Positioning</span>
-              <select value={mode} onChange={(event) => setMode(event.target.value as HackathonMode)}>
+              <select value={mode} onChange={handleModeChange}>
                 {modes.map((item) => (
                   <option key={item} value={item}>
                     {positioning[item].name}
@@ -202,7 +261,7 @@ function App() {
                 <span className="tiny-label">Impacted Tests</span>
                 <h2>Coverage work queue</h2>
               </div>
-              <button className="ghost-button" onClick={() => setScanState("generated")}>
+              <button className="ghost-button" onClick={handleGenerateTests}>
                 <Sparkles size={15} />
                 Generate Tests
               </button>
@@ -245,7 +304,7 @@ function App() {
               <ShieldCheck size={18} />
             </div>
             <p>{approvalCopy.body}</p>
-            <button className={scanState === "approved" ? "approval-button approved" : "approval-button"} onClick={() => setScanState("approved")}>
+            <button className={scanState === "approved" ? "approval-button approved" : "approval-button"} onClick={handleApproveRelease}>
               <ShieldCheck size={16} />
               {approvalCopy.action}
             </button>
