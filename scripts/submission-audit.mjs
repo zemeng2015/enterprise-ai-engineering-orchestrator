@@ -26,6 +26,7 @@ const requiredFiles = [
   "DEMO_SCRIPT.md",
   "STATUS.md",
   "docs/FINAL_SUBMISSION_RUNBOOK.md",
+  "docs/OFFICIAL_RULES_REVIEW_NOTES.md",
   "docs/DEMO_TELEPROMPTER.md",
   "docs/DEVPOST_FIELD_FIXES.md",
   "docs/VIDEO_RECORDING_PACKAGE.md",
