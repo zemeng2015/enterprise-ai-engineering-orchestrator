@@ -30,12 +30,12 @@ https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 ```
 
 3. Confirm the deck field points to the public raw PPTX link.
-4. Complete the UiPath Automation Cloud invite after explicit confirmation and capture the real Labs environment URL.
-5. Add the UiPath Labs environment URL to Devpost Additional info.
+4. Confirm the UiPath Labs environment URL remains saved in Devpost Additional info.
+5. Confirm the ignored local readiness file contains the real Labs environment URL.
 6. Confirm the demo video URL is still `https://youtu.be/8AKMY8VoN7c`.
 7. If submitting solo, set the participation field to `Individual` rather than `Team`.
 8. Replace the duplicated Project Story headings with the clean final story from `DEVPOST_DRAFTS.md`.
-9. Optionally upload `docs/screenshots/devpost-thumbnail.png` as the Devpost thumbnail to replace the placeholder image.
+9. Optionally upload `docs/screenshots/devpost-thumbnail.png` as the Devpost thumbnail to replace the placeholder image if a manual file picker is available.
 10. Follow `docs/DEVPOST_FIELD_FIXES.md` for the field-by-field final pass.
 11. Preview the public project page and confirm there is no private email, token, credential, or unsupported claim.
 12. Review `docs/OFFICIAL_RULES_REVIEW_NOTES.md`, the official rules, and the Devpost Terms before checking the final terms box.
@@ -70,8 +70,6 @@ Only click `Submit project` after all required fields are filled and the final p
 
 ## Known Current Blockers
 
-- UiPath Labs environment URL is still required.
-- UiPath Automation Cloud invite has been found, but account invite completion requires explicit user confirmation.
-- The participation field currently needs a solo/team sanity check.
-- The Project Story currently needs cleanup because duplicated empty Markdown headings are visible.
-- Official Rules and Devpost Terms still need final review before checking the box.
+- Devpost is ready at 4/5 steps with required fields saved.
+- The thumbnail still shows the placeholder image; this is optional and does not block required finalization.
+- Official Rules and Devpost Terms still need action-time confirmation before checking the box and clicking `Submit project`.

@@ -54,9 +54,9 @@ const requiredReadmeTerms = [
 ];
 
 const knownBlockerTerms = [
-  "UiPath Labs environment URL is still required",
-  "participation field currently needs a solo/team sanity check",
-  "Official Rules and Devpost Terms still need final review",
+  "Devpost is ready at 4/5 steps with required fields saved",
+  "thumbnail still shows the placeholder image",
+  "Official Rules and Devpost Terms still need action-time confirmation",
 ];
 
 const imageRequirements = [

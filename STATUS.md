@@ -1,6 +1,6 @@
 # Current Status
 
-Last updated: 2026-06-18
+Last updated: 2026-06-19
 
 ## UiPath AgentHack
 
@@ -11,9 +11,12 @@ What is done:
 - Public GitHub repo is available.
 - GitHub Pages demo is live.
 - Devpost project draft exists.
-- Devpost draft is 3/5 steps complete.
-- UiPath Labs access request has been submitted.
-- UiPath Automation Cloud invite has been found in Gmail; account invite completion is pending explicit user confirmation.
+- Devpost draft is 4/5 steps complete.
+- UiPath Automation Cloud invite has been completed.
+- UiPath Labs environment URL has been captured and saved in Devpost Additional info.
+- Devpost Additional info is saved with solo participation (`Individual`) and an empty team-name field.
+- Devpost Project Story has been replaced with the clean final story.
+- Public Devpost preview has been checked for the clean story, demo embed, public demo link, and absence of private email or one-time UiPath URL text.
 - Demo video URL is filled on Devpost.
 - Presentation deck path is present in the repo.
 - Devpost thumbnail asset is ready in `docs/screenshots/devpost-thumbnail.png`.
@@ -21,27 +24,19 @@ What is done:
 
 Current blocker:
 
-- Waiting for UiPath Labs environment URL. Devpost requires this URL in Additional info before finalization.
+- Final Devpost submission requires action-time confirmation before checking the Official Rules / Devpost Terms checkbox and clicking `Submit project`.
 
 Current Devpost draft issues observed:
 
-- Additional Info still has an empty UiPath Labs environment URL.
-- UiPath invite completion is waiting at the final account setup step; do not invent a Labs URL.
-- Participation is currently saved as `Team`; change to `Individual` if Zack is submitting solo.
-- Project Story currently shows duplicated empty Markdown headings before the real story.
+- Devpost project thumbnail still shows the placeholder image. The local thumbnail asset is ready, but automated upload was not available in the current browser tooling.
 - Official Rules and Devpost Terms are not yet accepted.
 - Final `Submit project` has not been clicked.
 
 Remaining work:
 
-- Add UiPath Labs URL to Devpost when received.
-- Complete the UiPath Automation Cloud invite after explicit confirmation, then capture the real Labs environment URL.
-- Confirm whether the Devpost participation field should be `Individual` or `Team`.
-- Replace the duplicated Project Story with the clean final story from `DEVPOST_DRAFTS.md`.
-- Optionally upload `docs/screenshots/devpost-thumbnail.png` as the Devpost project thumbnail.
+- Optionally upload `docs/screenshots/devpost-thumbnail.png` as the Devpost project thumbnail if a manual browser file picker is available.
 - Follow `docs/FINAL_SUBMISSION_RUNBOOK.md` for final field checks.
-- Fill the real Labs URL in `submission.readiness.local.json` and run `npm run final-readiness`.
-- Complete Devpost finalization.
+- After explicit rules/terms confirmation, set `officialRulesReadyToAccept` in `submission.readiness.local.json`, rerun `npm run final-readiness`, then complete Devpost finalization.
 - Optionally update README/screenshots after real UiPath Labs access is connected.
 
 ## Active Public Links

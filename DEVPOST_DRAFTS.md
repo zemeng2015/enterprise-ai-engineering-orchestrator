@@ -14,10 +14,10 @@ Current UiPath AgentHack status:
 
 ```text
 Devpost draft: created
-Draft progress: 3/5 steps complete
-UiPath Labs request: submitted
-Blocking field: UiPath Labs environment URL
-Remaining field sanity check: participation type should be Individual if Zack is submitting solo
+Draft progress: 4/5 steps complete
+UiPath Labs environment URL: saved in Devpost Additional info and local ignored readiness file
+Participation type: Individual
+Remaining blocker: action-time confirmation for Official Rules / Devpost Terms and final Submit project click
 ```
 
 ## UiPath AgentHack
@@ -72,11 +72,11 @@ Enterprise AI Orchestrator turns a release into an operator-style workflow: it s
 
 ## How we built it
 
-The MVP is a React + TypeScript + Vite application with a compact enterprise workflow interface, simulated repository/CI signals, risk scoring, generated test recommendations, and an audit-friendly decision queue. The public demo, source repository, demo video, and submission deck are available now, and the UiPath Labs access request has been submitted so the next iteration can connect the workflow to a real UiPath sandbox.
+The MVP is a React + TypeScript + Vite application with a compact enterprise workflow interface, simulated repository/CI signals, risk scoring, generated test recommendations, and an audit-friendly decision queue. The public demo, source repository, demo video, submission deck, and UiPath Labs environment are available now so the next iteration can connect the workflow to a real UiPath sandbox.
 
 ## Challenges
 
-The main challenge was keeping the demo honest: the current version shows the orchestration pattern and human-governed workflow, while the live UiPath Test Cloud integration is pending sandbox access. The product is structured so the simulated automation layer can be replaced with UiPath execution once access arrives.
+The main challenge was keeping the demo honest: the current version shows the orchestration pattern and human-governed workflow, while live UiPath Test Cloud execution is the next integration step. The product is structured so the simulated automation layer can be replaced with UiPath execution once the integration is wired in.
 
 ## Accomplishments
 
