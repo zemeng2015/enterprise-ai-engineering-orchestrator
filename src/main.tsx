@@ -5,7 +5,13 @@ import "./styles.css";
 
 pendo.initialize({
   visitor: {
-    id: ''
+    id: "enterprise-ai-orchestrator-demo-visitor",
+    role: "hackathon-reviewer",
+    environment: "github-pages-demo"
+  },
+  account: {
+    id: "enterprise-ai-orchestrator",
+    name: "Enterprise AI Engineering Orchestrator"
   }
 });
 
