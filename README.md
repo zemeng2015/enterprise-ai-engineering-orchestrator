@@ -27,6 +27,7 @@ The same demo can be described differently per submission:
 
 - [Submission packet draft](./SUBMISSION_PACKET.md)
 - [Public submission proof index](./docs/submission-proof-index.md)
+- [Devpost proof link patch](./docs/devpost-proof-link-patch.md)
 - [5-minute demo script](./DEMO_SCRIPT.md)
 - [Devpost draft copy](./DEVPOST_DRAFTS.md)
 - [Deployment prep](./DEPLOYMENT.md)
