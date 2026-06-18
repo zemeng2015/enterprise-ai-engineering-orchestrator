@@ -2,7 +2,7 @@
   "project": "Enterprise AI Engineering Orchestrator",
   "liveDemo": "https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/",
   "repository": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator",
-  "lastVerifiedCommit": "cd85e5d",
+  "lastVerifiedCommit": "d4e8bb4",
   "proofs": [
     {
       "track": "UiPath AgentHack",
@@ -25,7 +25,7 @@
     {
       "track": "GitLab Transcend",
       "label": "GitLab Duo Agent Skill artifact",
-      "url": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/blob/main/skills/release-risk-orbit/SKILL.md",
+      "url": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/skills/release-risk-orbit/SKILL.md",
       "verifies": "Project-level GitLab Duo Agent Skill artifact for Orbit-style release-risk evidence."
     },
     {
