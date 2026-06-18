@@ -7,6 +7,7 @@ This index collects the public evidence links used by the June 2026 hackathon su
 - Live demo: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
 - Hosted proof index JSON: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/submission-proof-index.json
 - Repository: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
+- Stable release package: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/releases/tag/v2026-june-submission
 
 The live demo includes a `Submission Proofs` panel with public judging links for UiPath, Mind the Product, GitLab, and Casper.
 
@@ -28,4 +29,4 @@ Run:
 npm run verify:proofs
 ```
 
-The verifier checks that the live demo is reachable, the hosted proof-index JSON is available, the deployed bundle contains the proof panel and key proof strings, the Pendo app ID is still present, and every public proof URL returns HTTP 200.
+The verifier checks that the live demo is reachable, the hosted proof-index JSON is available, the GitHub release package exists, the deployed bundle contains the proof panel and key proof strings, the Pendo app ID is still present, and every public proof URL returns HTTP 200.

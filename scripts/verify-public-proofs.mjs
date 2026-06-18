@@ -1,5 +1,7 @@
 const liveDemoUrl = "https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/";
 const hostedProofIndexUrl = new URL("submission-proof-index.json", liveDemoUrl).toString();
+const releaseApiUrl =
+  "https://api.github.com/repos/zemeng2015/enterprise-ai-engineering-orchestrator/releases/tags/v2026-june-submission";
 
 const liveDemoSnippets = [
   "Submission Proofs",
@@ -72,6 +74,10 @@ if (proofIndex.project !== "Enterprise AI Engineering Orchestrator") {
   fail("hosted proof index JSON has an unexpected project name");
 }
 
+if (proofIndex.proofIndexVersion !== "2026-06-19.2") {
+  fail(`hosted proof index JSON has an unexpected version: ${proofIndex.proofIndexVersion}`);
+}
+
 if (!Array.isArray(proofIndex.proofs) || proofIndex.proofs.length < proofLinks.length) {
   fail("hosted proof index JSON does not list every expected proof");
 }
@@ -81,6 +87,18 @@ for (const proof of proofLinks) {
   if (!found) {
     fail(`hosted proof index JSON is missing proof URL: ${proof.url}`);
   }
+}
+
+const releaseResponse = await fetchOk(releaseApiUrl, "GitHub release metadata");
+const release = await releaseResponse.json();
+
+if (release.tag_name !== "v2026-june-submission") {
+  fail(`GitHub release has an unexpected tag: ${release.tag_name}`);
+}
+
+const hasSourceArchive = release.assets?.some((asset) => asset.name === "enterprise-ai-orchestrator-source.zip");
+if (!hasSourceArchive) {
+  fail("GitHub release does not include enterprise-ai-orchestrator-source.zip");
 }
 
 for (const snippet of htmlSnippets) {
@@ -123,4 +141,6 @@ for (const proof of proofLinks) {
   }
 }
 
-console.log("Public proof verification passed: live demo proof hub, hosted proof index JSON, and all public proof links are reachable.");
+console.log(
+  "Public proof verification passed: live demo proof hub, hosted proof index JSON, GitHub release package, and all public proof links are reachable.",
+);
