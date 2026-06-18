@@ -1,0 +1,63 @@
+{
+  "candidate": "Lablab Band of Agents Hackathon",
+  "project": "Enterprise Multi-Agent Release Governance Orchestrator",
+  "release_id": "checkout-2026.06.17",
+  "band_room_model": "release-risk-governance",
+  "live_band_api_status": "pending-account-access",
+  "boundary": "This is a local Band-ready collaboration proof. It does not claim a live Band API transcript until Band account/API access is available.",
+  "agents": [
+    {
+      "id": "planner",
+      "name": "Release Planner Agent",
+      "responsibility": "Open the release room and publish scope, owners, and policy gates."
+    },
+    {
+      "id": "risk-evidence",
+      "name": "Risk Evidence Agent",
+      "responsibility": "Convert repository and CI context into structured release-risk facts."
+    },
+    {
+      "id": "qa-test",
+      "name": "QA Test Agent",
+      "responsibility": "Turn the risk facts into targeted regression, contract, and workflow tests."
+    },
+    {
+      "id": "human-review",
+      "name": "Human Review Agent",
+      "responsibility": "Hold promotion until a reviewer approves the evidence packet."
+    }
+  ],
+  "handoffs": [
+    {
+      "from": "planner",
+      "to": "risk-evidence",
+      "room": "release-risk-governance",
+      "payload": "12 changed files, 4 owned services, 2 critical routes, release gate changed"
+    },
+    {
+      "from": "risk-evidence",
+      "to": "qa-test",
+      "room": "release-risk-governance",
+      "payload": "Risk score 71, auth callback contract changed, invoice retry branch weakened"
+    },
+    {
+      "from": "qa-test",
+      "to": "human-review",
+      "room": "release-risk-governance",
+      "payload": "Three targeted tests recommended with owners and acceptance criteria"
+    },
+    {
+      "from": "human-review",
+      "to": "planner",
+      "room": "release-risk-governance",
+      "payload": "Decision remains hold-for-human-review until evidence is approved"
+    }
+  ],
+  "generated_actions": [
+    "Generate OAuth nonce replay regression test",
+    "Add invoice retry exhaustion coverage",
+    "Prepare release gate API contract fixture diff"
+  ],
+  "approval_state": "needs-human-review",
+  "proof_digest_sha256": "af342950f89e11bc5629d4bbeefed87ee289ff4c14d5bbaa42bad06cf58ba96d"
+}

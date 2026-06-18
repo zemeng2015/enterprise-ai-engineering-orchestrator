@@ -240,6 +240,41 @@ The repository includes a schema-2 Anna App manifest, static UI bundle, local Ex
 
 This is a runnable hackathon prototype package, not a published Anna App Store listing. It uses safe simulated release context and does not call live customer systems or mutate repositories.
 
+## Lablab Band of Agents Hackathon
+
+### Title
+
+Enterprise Multi-Agent Release Governance Orchestrator
+
+### Tagline
+
+Band-ready release governance where planner, risk, QA, and human-review agents coordinate through visible handoffs.
+
+### Short description
+
+Enterprise Multi-Agent Release Governance Orchestrator turns release readiness into a coordinated agent workflow. A planner agent opens the release room, a risk-evidence agent publishes structured release facts, a QA-test agent creates targeted validation work, and a human-review agent holds high-risk releases until evidence is approved.
+
+### What it does
+
+The demo adds a `Band of Agents` positioning mode to the live workflow. It shows a shared release-risk room model, agent handoffs, generated test actions, public proof links, and an explicit human approval checkpoint. The local proof script verifies four agents, four handoffs, and a final `needs-human-review` state.
+
+### How it uses Band
+
+This is currently a Band-ready local proof rather than a live Band API transcript. The intended Band room is `release-risk-governance`, where each agent publishes and consumes structured handoff payloads. Live Band account/API proof should be added if the Lablab submission path remains open and account access is available before final judging.
+
+### What to submit
+
+- Repository: `https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator`
+- Live demo: `https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/`
+- Demo video: `https://youtu.be/8AKMY8VoN7c`
+- Readiness doc: `docs/band-of-agents-readiness.md`
+- Local proof command: `npm run band:proof`
+- Local proof artifact: `outputs/band-agent-collaboration-proof.json`
+
+### Boundary
+
+The current proof is local and Band-ready. It does not claim a live Band API transcript until Band account/API access is available. The workflow uses safe simulated release context and does not mutate repositories, CI, customer systems, or external accounts.
+
 ## Shared Answers
 
 ### Inspiration

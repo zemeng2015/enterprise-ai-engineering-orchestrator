@@ -13,6 +13,7 @@ const requiredFiles = [
   "docs/screenshots/orchestrator-desktop.png",
   "docs/screenshots/orchestrator-mobile.png",
   "docs/anna-ai-native-readiness.md",
+  "docs/band-of-agents-readiness.md",
   "anna-app/release-risk-review/manifest.json",
   "anna-app/release-risk-review/ui/index.html",
   "anna-app/release-risk-review/executas/release-risk-review/tool.mjs",
@@ -20,6 +21,7 @@ const requiredFiles = [
 
 const commands = [
   ["npm", ["run", "anna:proof"]],
+  ["npm", ["run", "band:proof"]],
   ["npm", ["run", "typecheck"]],
   ["npm", ["run", "build"]],
   ["npm", ["audit", "--audit-level=high"]],

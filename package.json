@@ -14,7 +14,8 @@
     "final-readiness": "node scripts/final-readiness.mjs",
     "casper:proof": "node scripts/casper-audit-proof.mjs",
     "anna:proof": "node scripts/anna-app-proof.mjs",
-    "anna:package": "node scripts/package-anna-app.mjs"
+    "anna:package": "node scripts/package-anna-app.mjs",
+    "band:proof": "node scripts/band-of-agents-proof.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.561.0",

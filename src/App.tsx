@@ -15,7 +15,7 @@ import {
   Sparkles,
   TestTube2,
 } from "lucide-react";
-import { casperAuditProof, evidenceLog, HackathonMode, positioning, proofLinks, tests, workflow } from "./data/demoData";
+import { bandEvidenceLog, bandWorkflow, casperAuditProof, evidenceLog, HackathonMode, positioning, proofLinks, tests, workflow } from "./data/demoData";
 
 const nav = [
   { label: "Release Risk", icon: Activity },
@@ -25,12 +25,14 @@ const nav = [
   { label: "Evidence", icon: ClipboardCheck },
 ];
 
-const modes: HackathonMode[] = ["uipath", "gitlab", "product", "casper", "anna"];
+const modes: HackathonMode[] = ["uipath", "gitlab", "product", "casper", "anna", "band"];
 
 function App() {
   const [mode, setMode] = useState<HackathonMode>("uipath");
   const [scanState, setScanState] = useState<"idle" | "running" | "generated" | "approved">("idle");
   const active = positioning[mode];
+  const visibleWorkflow = mode === "band" ? bandWorkflow : workflow;
+  const visibleEvidenceLog = mode === "band" ? bandEvidenceLog : evidenceLog;
   const highRiskCount = tests.filter((test) => test.risk === "high").length;
   const progress = scanState === "idle" ? 71 : scanState === "running" ? 77 : scanState === "generated" ? 64 : 24;
 
@@ -64,6 +66,14 @@ function App() {
         title: "Audit receipt ready",
         body: "Release decision hash is paired with a verified Casper Testnet transaction proof.",
         action: "Approve Receipt",
+      };
+    }
+
+    if (mode === "band") {
+      return {
+        title: "Agent handoff packet ready",
+        body: "Planner, risk, QA, and human-review agents coordinate through a Band-ready room model; live Band API proof is pending account access.",
+        action: "Approve Handoff",
       };
     }
 
@@ -101,7 +111,7 @@ function App() {
 
         <div className="sidebar-footer">
           <span className="tiny-label">Demo targets</span>
-          <strong>4 tracks</strong>
+          <strong>6 tracks</strong>
         </div>
       </aside>
 
@@ -198,7 +208,7 @@ function App() {
               <Bot size={18} />
             </div>
             <div className="timeline">
-              {workflow.map((step) => (
+              {visibleWorkflow.map((step) => (
                 <div className={`timeline-row ${step.status}`} key={step.label}>
                   <div className="timeline-dot">
                     {step.status === "complete" ? <Check size={14} /> : step.status === "active" ? <Sparkles size={14} /> : null}
@@ -277,7 +287,7 @@ function App() {
               <ClipboardCheck size={18} />
             </div>
             <ol>
-              {evidenceLog.map((entry, index) => (
+              {visibleEvidenceLog.map((entry, index) => (
                 <li key={entry}>
                   <span>{String(index + 1).padStart(2, "0")}</span>
                   {entry}

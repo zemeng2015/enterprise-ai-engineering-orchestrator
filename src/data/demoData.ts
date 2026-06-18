@@ -1,4 +1,4 @@
-export type HackathonMode = "uipath" | "gitlab" | "product" | "casper" | "anna";
+export type HackathonMode = "uipath" | "gitlab" | "product" | "casper" | "anna" | "band";
 
 export type TestCase = {
   id: string;
@@ -54,6 +54,12 @@ export const positioning = {
     angle: "AI-native release review app with tool calls, saved state, and human review",
     integration: "Anna App Prototype",
     primaryCta: "Open Review Flow",
+  },
+  band: {
+    name: "Band of Agents",
+    angle: "Enterprise multi-agent release governance with visible handoffs and human review",
+    integration: "Band-ready Agent Room",
+    primaryCta: "Coordinate Agents",
   },
 } satisfies Record<HackathonMode, { name: string; angle: string; integration: string; primaryCta: string }>;
 
@@ -123,11 +129,45 @@ export const workflow: WorkflowStep[] = [
   },
 ];
 
+export const bandWorkflow: WorkflowStep[] = [
+  {
+    label: "Open release room",
+    agent: "Release Planner Agent",
+    status: "complete",
+    evidence: "Creates a Band-ready room with release ID, changed modules, owners, and policy gates",
+  },
+  {
+    label: "Share risk context",
+    agent: "Risk Evidence Agent",
+    status: "complete",
+    evidence: "Publishes structured risk facts for auth callback, invoice retry, and release gate API",
+  },
+  {
+    label: "Delegate test plan",
+    agent: "QA Test Agent",
+    status: "active",
+    evidence: "Consumes room context and proposes targeted regression, contract, and workflow tests",
+  },
+  {
+    label: "Escalate decision",
+    agent: "Human Review Agent",
+    status: "pending",
+    evidence: "Holds promotion until a reviewer approves the evidence packet",
+  },
+];
+
 export const evidenceLog = [
   "Parsed merge request !4827 and mapped touched modules.",
   "Detected auth callback contract change with no matching test update.",
   "Generated JUnit skeleton for OAuth nonce replay scenario.",
   "Prepared UiPath human-in-the-loop approval task.",
+];
+
+export const bandEvidenceLog = [
+  "Planner agent opened release-risk-governance room for checkout-2026.06.17.",
+  "Risk evidence agent shared structured context: 12 changed files, 2 critical routes, auth contract change.",
+  "QA test agent delegated three targeted tests back into the room with owners and acceptance criteria.",
+  "Human review agent preserved the final approval checkpoint and blocked auto-promotion.",
 ];
 
 export const proofLinks: ProofLink[] = [
@@ -160,6 +200,12 @@ export const proofLinks: ProofLink[] = [
     target: "Anna AI-Native App Hackathon",
     href: "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/tree/main/anna-app/release-risk-review",
     note: "Runnable Anna App prototype package with schema-2 manifest, UI bundle, local Executa tool, and skill card.",
+  },
+  {
+    label: "Band-ready collaboration proof",
+    target: "Band of Agents Candidate",
+    href: "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/band-of-agents-readiness.md",
+    note: "Conditional Lablab submission packet with 3+ agent collaboration proof and an explicit live Band API gap.",
   },
 ];
 
