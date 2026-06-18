@@ -11,6 +11,13 @@ Use this when finishing the UiPath AgentHack Devpost submission.
 
 ## Before Finalizing
 
+Run the local checks:
+
+```bash
+npm run preflight
+npm run submission-audit
+```
+
 1. Confirm the Devpost project is still on `Track 3: UiPath Test Cloud`.
 2. Confirm the GitHub repository field points to:
 
