@@ -1,4 +1,5 @@
 const liveDemoUrl = "https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/";
+const hostedProofIndexUrl = new URL("submission-proof-index.json", liveDemoUrl).toString();
 
 const liveDemoSnippets = [
   "Submission Proofs",
@@ -64,6 +65,24 @@ function extractFirstAsset(html, extension) {
 const htmlResponse = await fetchOk(liveDemoUrl, "live demo");
 const html = await htmlResponse.text();
 
+const proofIndexResponse = await fetchOk(hostedProofIndexUrl, "hosted proof index JSON");
+const proofIndex = await proofIndexResponse.json();
+
+if (proofIndex.project !== "Enterprise AI Engineering Orchestrator") {
+  fail("hosted proof index JSON has an unexpected project name");
+}
+
+if (!Array.isArray(proofIndex.proofs) || proofIndex.proofs.length < proofLinks.length) {
+  fail("hosted proof index JSON does not list every expected proof");
+}
+
+for (const proof of proofLinks) {
+  const found = proofIndex.proofs.some((entry) => entry.url === proof.url);
+  if (!found) {
+    fail(`hosted proof index JSON is missing proof URL: ${proof.url}`);
+  }
+}
+
 for (const snippet of htmlSnippets) {
   if (!html.includes(snippet)) {
     fail(`live demo HTML is missing expected text: ${snippet}`);
@@ -104,4 +123,4 @@ for (const proof of proofLinks) {
   }
 }
 
-console.log("Public proof verification passed: live demo proof hub and all public proof links are reachable.");
+console.log("Public proof verification passed: live demo proof hub, hosted proof index JSON, and all public proof links are reachable.");

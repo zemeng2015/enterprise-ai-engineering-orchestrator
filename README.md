@@ -131,6 +131,7 @@ Current boundary: the payload hash is generated and paired with a verified Caspe
 ## Public Demo
 
 - Demo: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
+- Proof index JSON: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/submission-proof-index.json
 - Repository: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 
 ## Local Setup

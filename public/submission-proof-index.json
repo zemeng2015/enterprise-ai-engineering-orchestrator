@@ -1,0 +1,38 @@
+{
+  "project": "Enterprise AI Engineering Orchestrator",
+  "liveDemo": "https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/",
+  "repository": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator",
+  "lastVerifiedCommit": "cd85e5d",
+  "proofs": [
+    {
+      "track": "UiPath AgentHack",
+      "label": "UiPath Test Manager passed execution proof",
+      "url": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/uipath-test-manager-execution-passed.png",
+      "verifies": "UiPath Labs Test Manager manual validation result is marked Passed."
+    },
+    {
+      "track": "UiPath AgentHack",
+      "label": "UiPath Test Manager project dashboard proof",
+      "url": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/uipath-test-manager-project-dashboard-running.png",
+      "verifies": "UiPath Labs Test Manager project exists for Enterprise AI Orchestrator."
+    },
+    {
+      "track": "Mind the Product",
+      "label": "Novus/Pendo dashboard proof",
+      "url": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/novus-dashboard-live-after-install.png",
+      "verifies": "Novus/Pendo mapped the deployed GitHub Pages demo."
+    },
+    {
+      "track": "GitLab Transcend",
+      "label": "GitLab Duo Agent Skill artifact",
+      "url": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/blob/main/skills/release-risk-orbit/SKILL.md",
+      "verifies": "Project-level GitLab Duo Agent Skill artifact for Orbit-style release-risk evidence."
+    },
+    {
+      "track": "Casper Agentic Buildathon",
+      "label": "Casper Testnet transaction proof",
+      "url": "https://testnet.cspr.live/transaction/6b2bad1bfd8fb5bd57d344310a0876c05ff454513df793b43f5b87e6e3f8af84",
+      "verifies": "Verified Casper Testnet transaction paired with the generated audit receipt."
+    }
+  ]
+}
