@@ -26,6 +26,7 @@ An enterprise release-risk workflow where planner, risk-evidence, QA-test, and h
 - Live demo mode: `Band of Agents`
 - Local proof command: `npm run band:proof`
 - Local proof artifact: `outputs/band-agent-collaboration-proof.json`
+- Band integration scaffold: `band-agents/release-governance/`
 - Public repository: `https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator`
 - Live demo: `https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/`
 - Demo video: `https://youtu.be/8AKMY8VoN7c`
@@ -49,6 +50,8 @@ The proof verifies:
 - at least three coordinating agents,
 - a single shared `release-risk-governance` room model,
 - visible agent handoffs,
+- Band platform tool names such as `band_send_message`, `band_add_participant`, `band_get_participants`, and `band_create_chatroom`,
+- a sample `room-transcript.jsonl` with one room message per handoff,
 - generated test actions,
 - a final `needs-human-review` checkpoint.
 
@@ -65,7 +68,7 @@ Enterprise Multi-Agent Release Governance Orchestrator opens a release room, has
 
 ## How it uses Band
 
-The submitted package includes a Band-ready room model named `release-risk-governance` and a local proof command, `npm run band:proof`, that verifies four agents and four handoffs. The current public demo exposes a `Band of Agents` positioning mode. Live Band API proof is pending account/API access and should be added before final judging if the platform allows it.
+The submitted package includes a Band-ready room model named `release-risk-governance`, a Band integration scaffold under `band-agents/release-governance/`, and a local proof command, `npm run band:proof`, that verifies four agents, four handoffs, Band platform tool names, and a sample room transcript. The current public demo exposes a `Band of Agents` positioning mode. Live Band API proof is pending account/API access and should be added before final judging if the platform allows it.
 
 ## Built with
 

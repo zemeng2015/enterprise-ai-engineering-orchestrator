@@ -1,8 +1,13 @@
-import { mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
 
 const outputPath = join("outputs", "band-agent-collaboration-proof.json");
+const integrationRoot = join("band-agents", "release-governance");
+const agentsPath = join(integrationRoot, "agents.json");
+const transcriptPath = join(integrationRoot, "room-transcript.jsonl");
+const envExamplePath = join(integrationRoot, ".env.example");
+const agentConfigExamplePath = join(integrationRoot, "agent_config.example.yaml");
 
 const proof = {
   candidate: "Lablab Band of Agents Hackathon",
@@ -73,12 +78,47 @@ function fail(message) {
   process.exit(1);
 }
 
+for (const file of [agentsPath, transcriptPath, envExamplePath, agentConfigExamplePath]) {
+  if (!existsSync(file)) {
+    fail(`missing ${file}`);
+  }
+}
+
+const agentSpec = JSON.parse(readFileSync(agentsPath, "utf8"));
+const transcript = readFileSync(transcriptPath, "utf8")
+  .trim()
+  .split(/\r?\n/)
+  .filter(Boolean)
+  .map((line) => JSON.parse(line));
+
 if (proof.agents.length < 3) {
   fail("proof must include at least three coordinating agents");
 }
 
+if (agentSpec.room_model !== proof.band_room_model) {
+  fail("agent spec room model must match the proof room model");
+}
+
+if (!Array.isArray(agentSpec.agents) || agentSpec.agents.length !== proof.agents.length) {
+  fail("agent spec must describe the same four agents as the proof");
+}
+
+for (const requiredTool of ["band_send_message", "band_add_participant", "band_get_participants", "band_create_chatroom"]) {
+  if (!agentSpec.platform_tools?.includes(requiredTool)) {
+    fail(`agent spec is missing Band platform tool ${requiredTool}`);
+  }
+}
+
 if (!proof.handoffs.every((handoff) => handoff.room === proof.band_room_model)) {
   fail("every handoff must use the same Band-ready room model");
+}
+
+if (transcript.length !== proof.handoffs.length) {
+  fail("sample room transcript must contain one message per handoff");
+}
+
+if (!transcript.every((entry) => entry.room === proof.band_room_model && entry.tool === "band_send_message")) {
+  fail("sample room transcript must use the Band room and band_send_message tool");
 }
 
 if (proof.approval_state !== "needs-human-review") {

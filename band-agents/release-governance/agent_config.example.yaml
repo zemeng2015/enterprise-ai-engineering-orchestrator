@@ -1,0 +1,15 @@
+release_planner_agent:
+  agent_id: "<band-release-planner-agent-uuid>"
+  api_key: "<band-release-planner-agent-api-key>"
+
+risk_evidence_agent:
+  agent_id: "<band-risk-evidence-agent-uuid>"
+  api_key: "<band-risk-evidence-agent-api-key>"
+
+qa_test_agent:
+  agent_id: "<band-qa-test-agent-uuid>"
+  api_key: "<band-qa-test-agent-api-key>"
+
+human_review_agent:
+  agent_id: "<band-human-review-agent-uuid>"
+  api_key: "<band-human-review-agent-api-key>"

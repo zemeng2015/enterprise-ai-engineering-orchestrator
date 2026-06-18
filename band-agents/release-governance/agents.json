@@ -1,0 +1,45 @@
+{
+  "room_model": "release-risk-governance",
+  "platform_tools": [
+    "band_send_message",
+    "band_send_event",
+    "band_add_participant",
+    "band_get_participants",
+    "band_create_chatroom",
+    "band_lookup_peers"
+  ],
+  "agents": [
+    {
+      "id": "release-planner",
+      "name": "Release Planner Agent",
+      "description": "Starts the release room, posts release scope, assigns owners, and keeps the workflow state machine honest.",
+      "required_inputs": ["release_id", "changed_files", "owners", "policy_gates"],
+      "emits": ["release_scope", "handoff_to_risk_evidence"],
+      "band_tools": ["band_create_chatroom", "band_add_participant", "band_send_message", "band_get_participants"]
+    },
+    {
+      "id": "risk-evidence",
+      "name": "Risk Evidence Agent",
+      "description": "Turns repository and CI context into structured release-risk facts.",
+      "required_inputs": ["release_scope", "test_history", "changed_routes"],
+      "emits": ["risk_facts", "handoff_to_qa_test"],
+      "band_tools": ["band_send_message", "band_send_event", "band_lookup_peers"]
+    },
+    {
+      "id": "qa-test",
+      "name": "QA Test Agent",
+      "description": "Converts risk facts into targeted regression, contract, and workflow tests with owners and acceptance criteria.",
+      "required_inputs": ["risk_facts", "coverage_gaps"],
+      "emits": ["test_plan", "handoff_to_human_review"],
+      "band_tools": ["band_send_message", "band_send_event"]
+    },
+    {
+      "id": "human-review",
+      "name": "Human Review Agent",
+      "description": "Blocks auto-promotion, summarizes evidence, and waits for a reviewer approval decision.",
+      "required_inputs": ["test_plan", "risk_facts", "release_scope"],
+      "emits": ["approval_packet", "hold_for_human_review"],
+      "band_tools": ["band_send_message", "band_get_participants"]
+    }
+  ]
+}

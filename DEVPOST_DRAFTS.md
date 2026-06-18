@@ -268,6 +268,7 @@ This is currently a Band-ready local proof rather than a live Band API transcrip
 - Live demo: `https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/`
 - Demo video: `https://youtu.be/8AKMY8VoN7c`
 - Readiness doc: `docs/band-of-agents-readiness.md`
+- Band integration scaffold: `band-agents/release-governance/`
 - Local proof command: `npm run band:proof`
 - Local proof artifact: `outputs/band-agent-collaboration-proof.json`
 
