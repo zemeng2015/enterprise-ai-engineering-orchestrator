@@ -34,3 +34,6 @@ jobs:
 
       - name: Audit high severity vulnerabilities
         run: npm audit --audit-level=high
+
+      - name: Audit submission readiness artifacts
+        run: npm run submission-audit
