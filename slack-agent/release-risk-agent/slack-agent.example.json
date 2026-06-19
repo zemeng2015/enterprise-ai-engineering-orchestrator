@@ -1,0 +1,34 @@
+{
+  "name": "Enterprise Release Risk Agent",
+  "track": "New Slack Agent",
+  "workspace_channel": "#release-risk-review",
+  "status": "sandbox-url-pending",
+  "uses": ["MCP server integration"],
+  "mcp_servers": [
+    {
+      "name": "release-risk-review",
+      "tool": "release_risk.review",
+      "manifest": "./mcp-server.example.json"
+    }
+  ],
+  "workflow": [
+    {
+      "step": "open_review_thread",
+      "description": "Open a Slack release review thread with release ID, changed modules, owners, and policy gates."
+    },
+    {
+      "step": "call_mcp_review_tool",
+      "description": "Call release_risk.review to obtain risk score, impacted services, and recommended tests."
+    },
+    {
+      "step": "post_test_recommendations",
+      "description": "Post targeted test recommendations with owner mentions and acceptance criteria."
+    },
+    {
+      "step": "hold_for_human_approval",
+      "description": "Preserve a human approval checkpoint before release promotion."
+    }
+  ],
+  "judge_access_required": ["slackhack@salesforce.com", "testing@devpost.com"],
+  "boundary": "This draft is Slack-ready but does not claim a live Slack developer sandbox until one is connected."
+}

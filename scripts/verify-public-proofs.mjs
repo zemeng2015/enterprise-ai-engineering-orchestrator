@@ -12,6 +12,7 @@ const liveDemoSnippets = [
   "6b2bad1bfd8fb5bd57d344310a0876c05ff454513df793b43f5b87e6e3f8af84",
   "Anna App Package",
   "Band of Agents",
+  "Slack Agent Builder",
 ];
 
 const htmlSnippets = [
@@ -55,6 +56,11 @@ const proofLinks = [
     url: "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/band-of-agents-readiness.md",
     requiredText: "local proof command",
   },
+  {
+    label: "Slack Agent readiness packet",
+    url: "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/slack-agent-builder-readiness.md",
+    requiredText: "MCP server integration",
+  },
 ];
 
 function fail(message) {
@@ -86,7 +92,7 @@ if (proofIndex.project !== "Enterprise AI Engineering Orchestrator") {
   fail("hosted proof index JSON has an unexpected project name");
 }
 
-if (proofIndex.proofIndexVersion !== "2026-06-19.5") {
+if (proofIndex.proofIndexVersion !== "2026-06-19.6") {
   fail(`hosted proof index JSON has an unexpected version: ${proofIndex.proofIndexVersion}`);
 }
 

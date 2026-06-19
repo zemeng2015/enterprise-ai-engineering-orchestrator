@@ -1,0 +1,15 @@
+{
+  "candidate": "Slack Agent Builder Challenge",
+  "project": "Enterprise Release Risk Agent for Slack",
+  "track": "New Slack Agent",
+  "live_slack_sandbox_status": "sandbox-url-pending",
+  "mcp_tool": "release_risk.review",
+  "workflow_steps": 4,
+  "judge_access_required": [
+    "slackhack@salesforce.com",
+    "testing@devpost.com"
+  ],
+  "approval_state": "hold-for-human-review",
+  "boundary": "This draft is Slack-ready but does not claim a live Slack developer sandbox until one is connected.",
+  "proof_digest_sha256": "9bdb50b24680102564b5abcce2ca3dec5a3a2bcac486338afb2ae7da46f04b5c"
+}

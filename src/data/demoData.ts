@@ -1,4 +1,4 @@
-export type HackathonMode = "uipath" | "gitlab" | "product" | "casper" | "anna" | "band";
+export type HackathonMode = "uipath" | "gitlab" | "product" | "casper" | "anna" | "band" | "slack";
 
 export type TestCase = {
   id: string;
@@ -60,6 +60,12 @@ export const positioning = {
     angle: "Enterprise multi-agent release governance with visible handoffs and human review",
     integration: "Band-ready Agent Room",
     primaryCta: "Coordinate Agents",
+  },
+  slack: {
+    name: "Slack Agent Builder",
+    angle: "Slack-native release-risk agent with MCP tool integration and review handoffs",
+    integration: "Slack Agent + MCP Server",
+    primaryCta: "Prepare Slack Handoff",
   },
 } satisfies Record<HackathonMode, { name: string; angle: string; integration: string; primaryCta: string }>;
 
@@ -170,6 +176,40 @@ export const bandEvidenceLog = [
   "Human review agent preserved the final approval checkpoint and blocked auto-promotion.",
 ];
 
+export const slackWorkflow: WorkflowStep[] = [
+  {
+    label: "Open Slack review channel",
+    agent: "Slack Release Agent",
+    status: "complete",
+    evidence: "Creates a review thread with release ID, owners, and risk policy summary.",
+  },
+  {
+    label: "Call MCP risk tool",
+    agent: "Release Risk MCP Server",
+    status: "complete",
+    evidence: "Returns structured risk score, impacted services, and recommended tests.",
+  },
+  {
+    label: "Post targeted tests",
+    agent: "Slack Release Agent",
+    status: "active",
+    evidence: "Publishes three test recommendations with owner mentions and approval buttons.",
+  },
+  {
+    label: "Hold promotion",
+    agent: "Human Reviewer",
+    status: "pending",
+    evidence: "Keeps release in hold-for-human-review state until Slack approval is captured.",
+  },
+];
+
+export const slackEvidenceLog = [
+  "Slack agent draft opens #release-risk-review for checkout-2026.06.17.",
+  "MCP tool release_risk.review returns risk score 71 and three recommended tests.",
+  "Agent posts reviewer-facing summary with auth, billing, and release-gate evidence.",
+  "Sandbox URL and judge access remain pending until a real Slack developer workspace is available.",
+];
+
 export const proofLinks: ProofLink[] = [
   {
     label: "UiPath Test Manager",
@@ -206,6 +246,12 @@ export const proofLinks: ProofLink[] = [
     target: "Band of Agents Candidate",
     href: "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/band-of-agents-readiness.md",
     note: "Conditional Lablab submission packet with 3+ agent collaboration proof and an explicit live Band API gap.",
+  },
+  {
+    label: "Slack Agent readiness packet",
+    target: "Slack Agent Builder Candidate",
+    href: "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/slack-agent-builder-readiness.md",
+    note: "Conditional Slack Agent Builder packet with MCP integration scaffold and explicit sandbox access gap.",
   },
 ];
 

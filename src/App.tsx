@@ -15,7 +15,19 @@ import {
   Sparkles,
   TestTube2,
 } from "lucide-react";
-import { bandEvidenceLog, bandWorkflow, casperAuditProof, evidenceLog, HackathonMode, positioning, proofLinks, tests, workflow } from "./data/demoData";
+import {
+  bandEvidenceLog,
+  bandWorkflow,
+  casperAuditProof,
+  evidenceLog,
+  HackathonMode,
+  positioning,
+  proofLinks,
+  slackEvidenceLog,
+  slackWorkflow,
+  tests,
+  workflow,
+} from "./data/demoData";
 
 const nav = [
   { label: "Release Risk", icon: Activity },
@@ -25,14 +37,14 @@ const nav = [
   { label: "Evidence", icon: ClipboardCheck },
 ];
 
-const modes: HackathonMode[] = ["uipath", "gitlab", "product", "casper", "anna", "band"];
+const modes: HackathonMode[] = ["uipath", "gitlab", "product", "casper", "anna", "band", "slack"];
 
 function App() {
   const [mode, setMode] = useState<HackathonMode>("uipath");
   const [scanState, setScanState] = useState<"idle" | "running" | "generated" | "approved">("idle");
   const active = positioning[mode];
-  const visibleWorkflow = mode === "band" ? bandWorkflow : workflow;
-  const visibleEvidenceLog = mode === "band" ? bandEvidenceLog : evidenceLog;
+  const visibleWorkflow = mode === "band" ? bandWorkflow : mode === "slack" ? slackWorkflow : workflow;
+  const visibleEvidenceLog = mode === "band" ? bandEvidenceLog : mode === "slack" ? slackEvidenceLog : evidenceLog;
   const highRiskCount = tests.filter((test) => test.risk === "high").length;
   const progress = scanState === "idle" ? 71 : scanState === "running" ? 77 : scanState === "generated" ? 64 : 24;
 
@@ -77,6 +89,14 @@ function App() {
       };
     }
 
+    if (mode === "slack") {
+      return {
+        title: "Slack agent packet ready",
+        body: "Slack release agent and MCP review-tool scaffold are ready; final sandbox URL and judge access require a real Slack developer workspace.",
+        action: "Approve Slack Packet",
+      };
+    }
+
     return {
       title: "Needs Review",
       body: "Auth and release-gate changes require a human checkpoint before promotion.",
@@ -111,7 +131,7 @@ function App() {
 
         <div className="sidebar-footer">
           <span className="tiny-label">Demo targets</span>
-          <strong>6 tracks</strong>
+          <strong>7 tracks</strong>
         </div>
       </aside>
 

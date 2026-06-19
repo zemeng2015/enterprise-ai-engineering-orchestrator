@@ -3,7 +3,7 @@
   "liveDemo": "https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/",
   "repository": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator",
   "release": "https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/releases/tag/v2026-june-submission",
-  "proofIndexVersion": "2026-06-19.5",
+  "proofIndexVersion": "2026-06-19.6",
   "proofs": [
     {
       "track": "UiPath AgentHack",
@@ -46,6 +46,12 @@
       "label": "Band-ready multi-agent collaboration proof",
       "url": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/band-of-agents-readiness.md",
       "verifies": "Conditional Lablab Band of Agents submission packet with four-agent local handoff proof and explicit live Band API gap."
+    },
+    {
+      "track": "Slack Agent Builder Challenge",
+      "label": "Slack Agent readiness packet",
+      "url": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/slack-agent-builder-readiness.md",
+      "verifies": "Conditional Slack Agent Builder packet with MCP integration scaffold and explicit live Slack sandbox access gap."
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "channel": "#release-risk-review",
+  "release_id": "checkout-2026.06.17",
+  "messages": [
+    {
+      "from": "Enterprise Release Risk Agent",
+      "text": "Review opened for checkout-2026.06.17. Risk scan requested through release_risk.review."
+    },
+    {
+      "from": "release-risk-review MCP",
+      "text": "Risk score 71. Auth callback, invoice retry worker, and release gate API require targeted tests."
+    },
+    {
+      "from": "Enterprise Release Risk Agent",
+      "text": "Recommended tests posted with owners: OAuth nonce replay, invoice retry exhaustion, release gate contract fixture diff."
+    },
+    {
+      "from": "Human Reviewer",
+      "text": "Hold promotion until evidence is approved."
+    }
+  ],
+  "approval_state": "hold-for-human-review"
+}

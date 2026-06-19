@@ -1,0 +1,37 @@
+{
+  "name": "release-risk-review",
+  "protocol": "mcp",
+  "status": "local-contract-ready",
+  "tools": [
+    {
+      "name": "release_risk.review",
+      "description": "Review release metadata and return risk score, impacted services, recommended tests, and approval state.",
+      "input_schema": {
+        "type": "object",
+        "required": ["release_id", "changed_files", "critical_routes"],
+        "properties": {
+          "release_id": { "type": "string" },
+          "changed_files": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "critical_routes": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      },
+      "sample_output": {
+        "release_id": "checkout-2026.06.17",
+        "risk_score": 71,
+        "approval_state": "hold-for-human-review",
+        "impacted_services": ["auth-callback", "invoice-retry-worker", "release-gate-api"],
+        "recommended_tests": [
+          "Generate OAuth nonce replay regression test",
+          "Add invoice retry exhaustion coverage",
+          "Prepare release gate API contract fixture diff"
+        ]
+      }
+    }
+  ]
+}

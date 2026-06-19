@@ -14,17 +14,22 @@ const requiredFiles = [
   "docs/screenshots/orchestrator-mobile.png",
   "docs/anna-ai-native-readiness.md",
   "docs/band-of-agents-readiness.md",
+  "docs/slack-agent-builder-readiness.md",
   "docs/pending-submission-field-packets.md",
   "docs/pending-submission-fields.json",
   "docs/h0-zero-stack-evaluation.md",
   "anna-app/release-risk-review/manifest.json",
   "anna-app/release-risk-review/ui/index.html",
   "anna-app/release-risk-review/executas/release-risk-review/tool.mjs",
+  "slack-agent/release-risk-agent/slack-agent.example.json",
+  "slack-agent/release-risk-agent/mcp-server.example.json",
+  "slack-agent/release-risk-agent/sample-slack-thread.json",
 ];
 
 const commands = [
   ["npm", ["run", "anna:proof"]],
   ["npm", ["run", "band:proof"]],
+  ["npm", ["run", "slack:proof"]],
   ["npm", ["run", "typecheck"]],
   ["npm", ["run", "build"]],
   ["npm", ["audit", "--audit-level=high"]],
