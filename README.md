@@ -35,9 +35,91 @@ The same demo can be described differently per submission:
 - [GitLab Transcend readiness](./docs/gitlab-transcend-readiness.md)
 - [Casper Agentic Buildathon readiness](./docs/casper-agentic-buildathon-readiness.md)
 - [Anna AI-Native App readiness](./docs/anna-ai-native-readiness.md)
-- [UiPath AgentHack presentation deck](./docs/uipath-agenthack-presentation.pptx)
+- [UiPath AgentHack official-template presentation deck](./docs/uipath-agenthack-presentation.pptx)
+- [UiPath AgentHack official template source](./docs/uipath-agenthack-official-template.pptx)
 - [UiPath Test Manager passed execution proof](./docs/uipath-test-manager-execution-passed.png)
 - [Devpost thumbnail asset](./docs/screenshots/devpost-thumbnail.png)
+
+## UiPath AgentHack Judging Checklist
+
+This repository is the public code artifact for **Enterprise AI Orchestrator for UiPath**, submitted to UiPath AgentHack under **Track 3: UiPath Test Cloud**.
+
+### Project Description
+
+Enterprise AI Engineering Orchestrator turns an enterprise release review into a governed QA workflow. It combines release context, repository risk signals, targeted test recommendations, validation evidence, and an explicit human approval checkpoint so teams can move from agentic analysis to accountable release decisions.
+
+The problem it solves: enterprise engineering teams often make release decisions from scattered pull-request context, CI signals, test ownership, and manual status notes. The project demonstrates how UiPath can coordinate that work into a repeatable, auditable workflow instead of another isolated dashboard.
+
+### UiPath Components
+
+Current submitted proof:
+
+- **UiPath Test Cloud / Test Manager:** a UiPath Labs Test Manager project named `Enterprise AI Orchestrator` exists in the hackathon tenant.
+- **Manual Test Manager validation evidence:** release-risk validation result is marked `Passed`; public proof is available in [`docs/uipath-test-manager-execution-passed.png`](./docs/uipath-test-manager-execution-passed.png).
+- **UiPath Automation Cloud sandbox:** hackathon Automation Cloud access was accepted and used to create judging proof.
+
+Implementation path represented by the demo:
+
+- **Agent Builder / coded-agent logic:** release-risk scoring, repository-context normalization, and generated QA recommendations are modeled in the app and proof scripts.
+- **API Workflows / workflow automation:** the intended UiPath workflow coordinates test execution requests, evidence capture, and review routing.
+- **Human approval gate:** high-risk release promotion remains blocked until a reviewer approves the evidence packet.
+
+Boundary: the public web demo uses safe simulated workflow state and does not call live customer systems or live UiPath APIs. The UiPath Labs proof shows a real hackathon Test Manager project and a manual passed validation result; replacing the simulated adapter with live UiPath Test Cloud execution is the next integration step.
+
+### Agent Type
+
+Hybrid agent implementation:
+
+- **Coded agent logic** for deterministic release-risk scoring, changed-file classification, CI/test signal normalization, and targeted QA recommendations.
+- **Low-code UiPath workflow orchestration** for Test Cloud execution, review routing, evidence attachment, and approval-status updates.
+
+### Setup Instructions
+
+Prerequisite: Node.js 20 or newer.
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator.git
+cd enterprise-ai-engineering-orchestrator
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the local app:
+
+```bash
+npm run dev -- --port 5178
+```
+
+4. Open the app:
+
+```text
+http://127.0.0.1:5178/
+```
+
+5. In the left rail, select **UiPath AgentHack** positioning.
+
+6. Run the release-risk workflow, inspect the generated test recommendations, and use the human approval checkpoint.
+
+7. Review public judging evidence:
+
+- Live demo: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
+- Demo video: https://youtu.be/8AKMY8VoN7c
+- Proof index: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/submission-proof-index.json
+- UiPath Test Manager proof: [`docs/uipath-test-manager-execution-passed.png`](./docs/uipath-test-manager-execution-passed.png)
+
+8. Optional verification commands:
+
+```bash
+npm run typecheck
+npm run build
+npm run verify:proofs
+```
 
 ## GitLab Transcend Readiness
 
@@ -61,7 +143,7 @@ The live web demo uses safe simulated GitLab context. It does not call live GitL
 
 ## UiPath AgentHack Readiness
 
-This repository is the public code artifact for the UiPath AgentHack draft submission.
+This section provides additional implementation detail for the UiPath AgentHack submission.
 
 ### Project Description
 
