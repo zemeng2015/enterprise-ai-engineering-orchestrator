@@ -8,6 +8,7 @@ Use this to audit or edit the UiPath AgentHack Devpost submission.
 - Public demo: https://zemeng2015.github.io/enterprise-ai-engineering-orchestrator/
 - Public repository: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 - Deck: https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator/raw/main/docs/uipath-agenthack-presentation.pptx
+- Google Drive deck mirror: https://docs.google.com/presentation/d/1vcH0cF9XP81APZeFJ13NwcTE1eTC5CgU/edit?usp=drivesdk&ouid=102500490592377866045&rtpof=true&sd=true
 - Demo video: https://youtu.be/8AKMY8VoN7c
 - Thumbnail asset: `docs/screenshots/devpost-thumbnail.png`
 - Official rules review notes: `docs/OFFICIAL_RULES_REVIEW_NOTES.md`
@@ -30,7 +31,7 @@ npm run final-readiness
 https://github.com/zemeng2015/enterprise-ai-engineering-orchestrator
 ```
 
-3. Confirm the deck field points to the public raw PPTX link.
+3. Confirm the deck field points to the Google Drive deck mirror, or to the public raw PPTX link if Devpost accepts the raw file link.
 4. Confirm the UiPath Labs environment URL remains saved in Devpost Additional info.
 5. Confirm the ignored local readiness file contains the real Labs environment URL.
 6. Confirm the demo video URL is still `https://youtu.be/8AKMY8VoN7c`.

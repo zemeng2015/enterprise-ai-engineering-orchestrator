@@ -36,6 +36,7 @@ The same demo can be described differently per submission:
 - [Casper Agentic Buildathon readiness](./docs/casper-agentic-buildathon-readiness.md)
 - [Anna AI-Native App readiness](./docs/anna-ai-native-readiness.md)
 - [UiPath AgentHack official-template presentation deck](./docs/uipath-agenthack-presentation.pptx)
+- [UiPath AgentHack Google Drive deck mirror](https://docs.google.com/presentation/d/1vcH0cF9XP81APZeFJ13NwcTE1eTC5CgU/edit?usp=drivesdk&ouid=102500490592377866045&rtpof=true&sd=true)
 - [UiPath AgentHack official template source](./docs/uipath-agenthack-official-template.pptx)
 - [UiPath Test Manager passed execution proof](./docs/uipath-test-manager-execution-passed.png)
 - [Devpost thumbnail asset](./docs/screenshots/devpost-thumbnail.png)
