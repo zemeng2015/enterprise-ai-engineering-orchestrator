@@ -71,4 +71,4 @@ For H0, the production-oriented version should run on Vercel and persist release
 
 ## Current Blocker
 
-This candidate is not submitted and is not currently recommended as a final target without the remaining Vercel proof. The architecture diagram is prepared at `docs/h0-zero-stack-architecture.md`, and AWS DynamoDB provisioning has been completed as partial proof in `docs/h0-aws-dynamodb-proof.md`. The missing external proofs are Vercel/v0 account access, Vercel Project Link, Vercel Team ID, AWS console screenshot, and a short demo video explaining the Vercel + AWS Database flow.
+This candidate is not submitted and is not currently recommended as a final target without the remaining Vercel proof. The architecture diagram is prepared at `docs/h0-zero-stack-architecture.md`, and AWS DynamoDB provisioning has been completed as partial proof in `docs/h0-aws-dynamodb-proof.md`, including `docs/h0-aws-dynamodb-cli-proof.png`. The missing external proofs are Vercel/v0 account access, Vercel Project Link, Vercel Team ID, AWS console screenshot or accepted equivalent, and a short demo video explaining the Vercel + AWS Database flow.

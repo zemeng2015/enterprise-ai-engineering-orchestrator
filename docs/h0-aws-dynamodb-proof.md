@@ -14,10 +14,15 @@ Generated on 2026-06-24 for the H0 Zero Stack candidate.
 
 ## Proof Files
 
+- `docs/h0-aws-dynamodb-cli-proof.png`
 - `outputs/h0-dynamodb-describe-table.json`
 - `outputs/h0-dynamodb-seed-item.json`
 - `outputs/h0-dynamodb-seed-key.json`
 - `outputs/h0-dynamodb-seed-review.json`
+
+## Proof Image
+
+![H0 AWS DynamoDB CLI proof](./h0-aws-dynamodb-cli-proof.png)
 
 ## Seed Review Record
 
