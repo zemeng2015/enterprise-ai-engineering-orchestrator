@@ -1,0 +1,37 @@
+{
+    "releaseId":  {
+                      "S":  "EAIO-H0-2026-06-24"
+                  },
+    "riskScore":  {
+                      "N":  "71"
+                  },
+    "approvalState":  {
+                          "S":  "hold-for-human-review"
+                      },
+    "changedFiles":  {
+                         "SS":  [
+                                    "src/App.tsx",
+                                    "src/data/demoData.ts",
+                                    "slack-agent/release-risk-agent/slack-agent.example.json"
+                                ]
+                     },
+    "recommendedTests":  {
+                             "SS":  [
+                                        "auth-session-regression",
+                                        "billing-gate-smoke",
+                                        "release-approval-human-review"
+                                    ]
+                         },
+    "reviewer":  {
+                     "S":  "Zemeng Wang"
+                 },
+    "createdAt":  {
+                      "S":  "2026-06-24T05:12:35Z"
+                  },
+    "updatedAt":  {
+                      "S":  "2026-06-24T05:12:35Z"
+                  },
+    "source":  {
+                   "S":  "H0 minimal AWS DynamoDB proof"
+               }
+}
