@@ -93,7 +93,7 @@ This is a runnable hackathon prototype package, not a published Anna App Store l
 
 ## Lablab Band of Agents Hackathon
 
-Current platform status: Lablab event page shows `Waiting for approval`. Submit this packet only after the Lablab approval confirmation arrives and the submission UI unlocks.
+Current platform status: tracked as `waiting-for-lablab-approval` in `docs/pending-submission-fields.json`. Submit this packet only after the Lablab account/API path is confirmed open for final submission.
 
 Title:
 

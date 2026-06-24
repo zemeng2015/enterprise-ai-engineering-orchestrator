@@ -5,7 +5,8 @@ This folder contains a Slack Agent Builder submission scaffold for the Slack Age
 It is intentionally honest about the current state:
 
 - Prepared: agent flow, MCP-style tool contract, local proof.
-- Pending: live Slack developer sandbox URL and judge access.
+- Provided: live Slack sandbox channel and judge access email sent on 2026-06-24.
+- Pending: reviewer follow-up only if a separate Slack invitation or additional access is requested.
 
 ## Agent Flow
 
@@ -27,4 +28,4 @@ It is intentionally honest about the current state:
 npm run slack:proof
 ```
 
-The proof verifies the prepared agent and MCP artifacts without claiming a live Slack sandbox.
+The proof verifies the prepared agent, MCP artifacts, live sandbox channel URL, and judge access email timestamp.

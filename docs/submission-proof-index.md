@@ -23,7 +23,7 @@ The live demo includes a `Submission Proofs` panel with public judging links for
 | Casper Agentic Buildathon | https://testnet.cspr.live/transaction/6b2bad1bfd8fb5bd57d344310a0876c05ff454513df793b43f5b87e6e3f8af84 | Verified Casper Testnet transaction paired with the generated audit receipt. |
 | Anna AI-Native App Hackathon | https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/anna-app/release-risk-review/SUBMISSION.md | Runnable Anna App prototype package with judge quickstart, schema-2 manifest, UI bundle, local Executa tool, Skill card, and local proof command. |
 | Band of Agents Hackathon | https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/band-of-agents-readiness.md | Conditional Lablab Band of Agents submission packet with four-agent local handoff proof and explicit live Band API gap. |
-| Slack Agent Builder Challenge | https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/slack-agent-builder-readiness.md | Conditional Slack Agent Builder packet with MCP integration scaffold and explicit live Slack sandbox access gap. |
+| Slack Agent Builder Challenge | https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/slack-agent-builder-readiness.md | Slack Agent Builder packet with MCP integration scaffold, live Slack sandbox channel, and judge access email sent. |
 
 ## Verification
 

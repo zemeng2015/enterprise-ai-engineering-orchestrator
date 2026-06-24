@@ -207,7 +207,7 @@ export const slackEvidenceLog = [
   "Slack agent draft opens #release-risk-review for checkout-2026.06.17.",
   "MCP tool release_risk.review returns risk score 71 and three recommended tests.",
   "Agent posts reviewer-facing summary with auth, billing, and release-gate evidence.",
-  "Sandbox URL and judge access remain pending until a real Slack developer workspace is available.",
+  "Live sandbox channel shared: https://enterpriseaio-fje3514.slack.com/archives/C0BCJC8PVA7. Judge access email sent to slackhack@salesforce.com and testing@devpost.com on 2026-06-24; awaiting reviewer response only if a separate Slack invitation is needed.",
 ];
 
 export const proofLinks: ProofLink[] = [
@@ -251,7 +251,7 @@ export const proofLinks: ProofLink[] = [
     label: "Slack Agent readiness packet",
     target: "Slack Agent Builder Candidate",
     href: "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/slack-agent-builder-readiness.md",
-    note: "Conditional Slack Agent Builder packet with MCP integration scaffold and explicit sandbox access gap.",
+    note: "Slack Agent Builder packet with MCP integration scaffold, live sandbox channel, and judge access email sent.",
   },
 ];
 

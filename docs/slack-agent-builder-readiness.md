@@ -6,7 +6,8 @@
 - Public page: `https://slackhack.devpost.com/`
 - Deadline: July 13, 2026 at 5:00 PM PDT.
 - Current public signal checked on 2026-06-19 CST: page shows online, public, ages 18+, $42,000 cash prize pool, and enterprise agent tracks.
-- Fit: strong, but final submission requires a real Slack developer sandbox URL and judge access.
+- Fit: strong, and a live Slack sandbox channel has been provided.
+- Live channel: `https://enterpriseaio-fje3514.slack.com/archives/C0BCJC8PVA7`.
 
 ## Official Requirements Captured
 
@@ -25,7 +26,7 @@ Submission needs:
 - Around 3-minute demo video with working project footage.
 - Architecture diagram.
 - URL to the Slack developer sandbox.
-- Access granted to `slackhack@salesforce.com` and `testing@devpost.com`.
+- Access email sent to `slackhack@salesforce.com` and `testing@devpost.com` on 2026-06-24.
 - For the Slack Agent for Organizations track, a Slack App ID proving Marketplace submission or resubmission.
 
 ## Project Positioning
@@ -83,7 +84,7 @@ The proof verifies:
 - the agent includes a release-risk review flow,
 - the MCP tool exposes `release_risk.review`,
 - the prepared workflow preserves a human approval checkpoint,
-- the current boundary does not claim a live Slack sandbox.
+- the live Slack sandbox channel and judge access email timestamp are recorded.
 
 ## Submission Copy
 
@@ -106,9 +107,9 @@ React, TypeScript, Vite, Node.js proof scripts, Slack Agent Builder draft, MCP-s
 
 ## Boundary
 
-The current proof is Slack-ready but does not claim a live Slack sandbox URL until a real Slack developer workspace is connected. Final Slack judging requires sharing the sandbox with `slackhack@salesforce.com` and `testing@devpost.com`.
+The proof is Slack-ready and now includes a live Slack sandbox channel. Final Slack judging access was emailed to `slackhack@salesforce.com` and `testing@devpost.com`; respond if reviewers request a separate Slack invitation or additional access.
 ```
 
 ## Current Blocker
 
-Final submission requires a real Slack developer sandbox URL. The sandbox must be accessible to `slackhack@salesforce.com` and `testing@devpost.com`. A Slack Marketplace App ID is only needed if entering the Slack Agent for Organizations track.
+Final submission now has the sandbox URL and judge notification email sent. Remaining follow-up is to respond if reviewers request a separate Slack invitation or additional access.

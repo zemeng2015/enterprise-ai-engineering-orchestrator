@@ -1,4 +1,4 @@
-# H0 Zero Stack Evaluation
+﻿# H0 Zero Stack Evaluation
 
 ## Candidate
 
@@ -22,18 +22,18 @@ The Enterprise AI Engineering Orchestrator can be framed as a monetizable B2B ap
 - provide an architecture diagram connecting front end and back-end components,
 - include a screenshot proving AWS Database usage.
 
-The current public project is a Vite/GitHub Pages demo with local simulated state. It does not yet have Vercel deployment, v0 proof, AWS Database integration, or AWS console/Vercel storage proof.
+The current public project is a Vite/GitHub Pages demo with local simulated state. AWS DynamoDB proof now exists in `docs/h0-aws-dynamodb-proof.md`, but the project does not yet have Vercel deployment, v0 proof, Vercel Project Link, or Vercel Team ID.
 
 ## Recommendation
 
 Do not treat H0 as a ready submission yet. It is only worth pursuing if browser/cloud access can be recovered quickly enough to:
 
 1. Create or import a Vercel/v0 project.
-2. Provision DynamoDB or Aurora/Aurora DSQL.
+2. Use the prepared DynamoDB proof in `docs/h0-aws-dynamodb-proof.md`.
 3. Add a minimal persistent release review table/model.
 4. Capture a screenshot proving AWS Database usage.
 5. Capture Vercel Project Link and Vercel Team ID.
-6. Add an architecture diagram.
+6. Use the prepared architecture diagram at `docs/h0-zero-stack-architecture.md`.
 7. Submit on Devpost before June 29, 2026 at 5:00 PM PDT.
 
 ## Minimal Honest Build Path
@@ -71,4 +71,4 @@ For H0, the production-oriented version should run on Vercel and persist release
 
 ## Current Blocker
 
-This candidate is not submitted and is not currently recommended as a final target without additional cloud proof. The missing external proofs are Vercel/v0 account access, AWS Database provisioning, Vercel Project Link, Vercel Team ID, and AWS Database usage screenshot.
+This candidate is not submitted and is not currently recommended as a final target without the remaining Vercel proof. The architecture diagram is prepared at `docs/h0-zero-stack-architecture.md`, and AWS DynamoDB provisioning has been completed as partial proof in `docs/h0-aws-dynamodb-proof.md`. The missing external proofs are Vercel/v0 account access, Vercel Project Link, Vercel Team ID, AWS console screenshot, and a short demo video explaining the Vercel + AWS Database flow.

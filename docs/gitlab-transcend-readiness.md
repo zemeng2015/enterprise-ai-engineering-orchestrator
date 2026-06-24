@@ -20,16 +20,16 @@ Status as of 2026-06-19 CST.
 | Text description/story | Public Devpost story explains developer pain point, workflow, implementation, challenges, accomplishments, and next steps. | Done |
 | Demo video under 3 minutes | YouTube demo is 2:30, has no copyright issue, and the GitLab Devpost public page verifies YouTube ID `8AKMY8VoN7c`. | Done |
 | GitLab Duo Agent Platform artifact | Project-level skill exists at `skills/release-risk-orbit/SKILL.md`. | Added |
-| Meaningful GitLab Orbit usage | The skill defines the intended Orbit query workflow and fallback safety rules, but the current web demo still uses simulated GitLab context rather than live Orbit API/CLI output. | Weak / needs live Orbit proof if available |
+| Meaningful GitLab Orbit usage | The repository now includes the skill artifact plus local GitLab Orbit CLI evidence in `docs/gitlab-orbit-local-proof.md` and `outputs/gitlab-orbit-local-*.json`. Remote Orbit API and AI Catalog publication still require authenticated GitLab access. | Stronger local Orbit proof / remote still pending |
 
 ## Current Risk
 
-The largest GitLab-specific judging risk is not basic submission completeness; it is theme fit. The Showcase Track expects an agent, flow, or skill that meaningfully uses GitLab Orbit through the API, CLI, or skill interface. This repository now includes an installable project-level GitLab Duo skill artifact, but the public web dashboard remains a simulated integration.
+The largest GitLab-specific judging risk is no longer basic submission completeness; it is whether judges require remote Orbit API output or AI Catalog publication. This repository now includes an installable project-level GitLab Duo skill artifact and local Orbit CLI proof, but the public web dashboard remains a simulated integration and remote Orbit access is not authenticated in this environment.
 
 ## Best Next Action
 
 Before the June 24, 2026 2:00pm EDT deadline:
 
-1. If GitLab Orbit access is available, run one real Orbit query against an indexed project or group and add the output/evidence to the README or Devpost story.
-2. If Orbit access is not available, keep the submission honest and label it as an installable skill plus simulated dashboard prototype.
+1. If GitLab Orbit access is available, run one remote Orbit query against an indexed project or group and add the output/evidence to the README or Devpost story.
+2. If Orbit access is not available, use the local Orbit CLI proof as the strongest honest evidence and label the public dashboard as a simulated workflow prototype.
 3. Keep the YouTube demo accessible to judges through the Devpost video field during the judging period.

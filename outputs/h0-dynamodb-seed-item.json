@@ -1,0 +1,26 @@
+{
+    "riskScore":  {
+                      "N":  "71"
+                  },
+    "changedFiles":  {
+                         "S":  "src/App.tsx, src/data/demoData.ts, slack-agent/release-risk-agent/mcp-server.example.json"
+                     },
+    "releaseId":  {
+                      "S":  "h0-eaio-2026-06-24"
+                  },
+    "recommendedTests":  {
+                             "S":  "OAuth nonce replay, invoice retry exhaustion, release gate contract regression"
+                         },
+    "approvalState":  {
+                          "S":  "hold-for-human-review"
+                      },
+    "reviewer":  {
+                     "S":  "Zemeng Wang"
+                 },
+    "createdAt":  {
+                      "S":  "2026-06-24T05:30:00Z"
+                  },
+    "updatedAt":  {
+                      "S":  "2026-06-24T05:30:00Z"
+                  }
+}

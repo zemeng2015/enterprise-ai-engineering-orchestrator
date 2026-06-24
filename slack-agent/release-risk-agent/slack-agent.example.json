@@ -2,7 +2,9 @@
   "name": "Enterprise Release Risk Agent",
   "track": "New Slack Agent",
   "workspace_channel": "#release-risk-review",
-  "status": "sandbox-url-pending",
+  "status": "judge-access-email-sent",
+  "sandbox_url": "https://enterpriseaio-fje3514.slack.com/archives/C0BCJC8PVA7",
+  "judge_access_email_sent_at": "2026-06-24T04:46:48Z",
   "uses": ["MCP server integration"],
   "mcp_servers": [
     {
@@ -30,5 +32,5 @@
     }
   ],
   "judge_access_required": ["slackhack@salesforce.com", "testing@devpost.com"],
-  "boundary": "This draft is Slack-ready but does not claim a live Slack developer sandbox until one is connected."
+  "boundary": "This draft is Slack-ready, includes a live Slack sandbox channel, and judge access was emailed to slackhack@salesforce.com and testing@devpost.com."
 }

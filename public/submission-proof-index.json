@@ -51,7 +51,7 @@
       "track": "Slack Agent Builder Challenge",
       "label": "Slack Agent readiness packet",
       "url": "https://raw.githubusercontent.com/zemeng2015/enterprise-ai-engineering-orchestrator/main/docs/slack-agent-builder-readiness.md",
-      "verifies": "Conditional Slack Agent Builder packet with MCP integration scaffold and explicit live Slack sandbox access gap."
+      "verifies": "Slack Agent Builder packet with MCP integration scaffold, live Slack sandbox channel, and judge access email sent."
     }
   ]
 }

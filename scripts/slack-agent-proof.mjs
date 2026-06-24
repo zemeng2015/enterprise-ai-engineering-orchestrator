@@ -50,8 +50,16 @@ if (!thread.messages?.some((message) => message.text.includes("release_risk.revi
   fail("sample Slack thread must show the MCP review tool call");
 }
 
-if (agent.status !== "sandbox-url-pending") {
-  fail("proof must not claim a live Slack sandbox before one exists");
+if (agent.status !== "judge-access-email-sent") {
+  fail("Slack agent draft must record the judge access email status");
+}
+
+if (!agent.sandbox_url?.startsWith("https://enterpriseaio-fje3514.slack.com/archives/")) {
+  fail("Slack agent draft must include the live sandbox channel URL");
+}
+
+if (!agent.judge_access_email_sent_at) {
+  fail("Slack agent draft must include the judge access email timestamp");
 }
 
 const proof = {
@@ -59,6 +67,8 @@ const proof = {
   project: "Enterprise Release Risk Agent for Slack",
   track: agent.track,
   live_slack_sandbox_status: agent.status,
+  sandbox_url: agent.sandbox_url,
+  judge_access_email_sent_at: agent.judge_access_email_sent_at,
   mcp_tool: tool.name,
   workflow_steps: agent.workflow.length,
   judge_access_required: agent.judge_access_required,

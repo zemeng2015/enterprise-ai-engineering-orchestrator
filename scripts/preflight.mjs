@@ -1,4 +1,5 @@
-import { existsSync } from "node:fs";
+import { existsSync, mkdirSync } from "node:fs";
+import { join } from "node:path";
 import { spawnSync } from "node:child_process";
 
 const requiredFiles = [
@@ -37,11 +38,36 @@ const commands = [
 
 function run(command, args) {
   const useNpmCli = command === "npm" && process.env.npm_execpath;
-  const executable = useNpmCli ? process.execPath : command;
-  const finalArgs = useNpmCli ? [process.env.npm_execpath, ...args] : args;
+  const useCmdExe = process.platform === "win32" && command === "npm" && !useNpmCli;
+  const executable = useNpmCli ? process.execPath : useCmdExe ? "cmd.exe" : command;
+  const finalArgs = useNpmCli
+    ? [process.env.npm_execpath, ...args]
+    : useCmdExe
+      ? ["/c", command, ...args]
+      : args;
+  const cacheCandidates = [
+    process.env.NPM_CONFIG_CACHE,
+    process.env.TMP,
+    process.env.TEMP,
+    join(process.cwd(), "outputs", "npm-cache"),
+  ].filter(Boolean);
+  let npmCacheDir = cacheCandidates.find((dir) => existsSync(dir)) || cacheCandidates[0];
+
+  if (npmCacheDir && !existsSync(npmCacheDir)) {
+    try {
+      mkdirSync(npmCacheDir, { recursive: true });
+    } catch {
+      npmCacheDir = undefined;
+    }
+  }
+  const env = {
+    ...process.env,
+    ...(npmCacheDir ? { NPM_CONFIG_CACHE: npmCacheDir } : {}),
+  };
   const result = spawnSync(executable, finalArgs, {
     stdio: "inherit",
     shell: false,
+    env,
   });
 
   if (result.error) {

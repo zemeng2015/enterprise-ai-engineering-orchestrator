@@ -2,7 +2,9 @@
   "candidate": "Slack Agent Builder Challenge",
   "project": "Enterprise Release Risk Agent for Slack",
   "track": "New Slack Agent",
-  "live_slack_sandbox_status": "sandbox-url-pending",
+  "live_slack_sandbox_status": "judge-access-email-sent",
+  "sandbox_url": "https://enterpriseaio-fje3514.slack.com/archives/C0BCJC8PVA7",
+  "judge_access_email_sent_at": "2026-06-24T04:46:48Z",
   "mcp_tool": "release_risk.review",
   "workflow_steps": 4,
   "judge_access_required": [
@@ -10,6 +12,6 @@
     "testing@devpost.com"
   ],
   "approval_state": "hold-for-human-review",
-  "boundary": "This draft is Slack-ready but does not claim a live Slack developer sandbox until one is connected.",
-  "proof_digest_sha256": "9bdb50b24680102564b5abcce2ca3dec5a3a2bcac486338afb2ae7da46f04b5c"
+  "boundary": "This draft is Slack-ready, includes a live Slack sandbox channel, and judge access was emailed to slackhack@salesforce.com and testing@devpost.com.",
+  "proof_digest_sha256": "33ea50d68c20666ee6017d6d31b9678e41ec9e34cedb9cb53581b1a11da6396a"
 }

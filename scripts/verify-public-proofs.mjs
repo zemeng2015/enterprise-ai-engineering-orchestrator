@@ -68,12 +68,37 @@ function fail(message) {
   process.exit(1);
 }
 
-async function fetchOk(url, label) {
-  const response = await fetch(url, { redirect: "follow" });
-  if (!response.ok) {
-    fail(`${label} returned HTTP ${response.status}: ${url}`);
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function fetchOk(url, label, { retries = 2, delayMs = 700, timeoutMs = 15000 } = {}) {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const response = await fetch(url, {
+        redirect: "follow",
+        signal: AbortSignal.timeout(timeoutMs),
+      });
+      if (response.ok) {
+        return response;
+      }
+
+      if (response.status >= 500 && attempt < retries) {
+        await sleep(delayMs * (attempt + 1));
+        continue;
+      }
+
+      fail(`${label} returned HTTP ${response.status}: ${url}`);
+      return null;
+    } catch (error) {
+      if (attempt < retries) {
+        await sleep(delayMs * (attempt + 1));
+        continue;
+      }
+      fail(`${label} request error after ${retries + 1} attempts: ${error.message}`);
+    }
   }
-  return response;
+  return null;
 }
 
 function extractFirstAsset(html, extension) {
